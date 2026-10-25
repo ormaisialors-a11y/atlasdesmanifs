@@ -1,0 +1,3 @@
+Les pancartes vont dans ce dossier, une par fichier (par exemple p16.json).
+Les contributions envoyées depuis le site y arrivent automatiquement.
+Ce fichier sert seulement à garder le dossier visible : ne le supprimez pas.

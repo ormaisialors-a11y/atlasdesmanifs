@@ -174,7 +174,11 @@ function cardHtml(p){
 }
 function renderGrid(){
   var list=sorted(D.pancartes.filter(function(p){return matches(p);}));
-  $("rCount").textContent=list.length+(list.length>1?" pancartes":" pancarte");
+  $("rCount").textContent=list.length?list.length+(list.length>1?" pancartes":" pancarte"):"Pancartes";
+  if(!D.pancartes.length){
+    $("grid").innerHTML='<div class="empty" style="grid-column:1/-1"><p><strong>L’atlas attend ses premières pancartes.</strong></p><p>Vous avez photographié une pancarte en manif ? Floutez les visages et envoyez-la : elle sera en ligne en quelques minutes.</p><a class="btn primary" href="#contribuer">Envoyer une photo de pancarte</a></div>';
+    return;
+  }
   if(!list.length){
     var m=S.f.manif?manif(S.f.manif):null;
     $("grid").innerHTML='<div class="empty"><p>'+(m?"Aucune pancarte pour "+esc(m.hashtag)+" pour l’instant.":"Aucune pancarte ne correspond à ces filtres.")+'</p><a class="btn primary" href="#contribuer">Proposer une pancarte</a></div>';
