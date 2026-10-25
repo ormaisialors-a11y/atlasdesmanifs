@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas des manifs</title>
+<meta name="description" content="Les pancartes des mobilisations, rangées comme dans un atlas : par manif, par ville, par jeu de mots, par colère.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F7F2; --surface:#FFFFFF; --ink:#13213F; --ink-soft:#4A5878;
+  --blue:#2346C2; --green:#16804A; --yellow:#F6E43F; --yellow-ink:#3B3300;
+  --line:#C9D6EE; --line-strong:#9FB4DE; --margin:#16804A;
+  --sheet:#FFFFFF; --chip:#E7EEF9; --focus:#2346C2;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1730; --surface:#14214A; --ink:#EEF2FF; --ink-soft:#A9B6D6;
+    --blue:#8EA8FF; --green:#5CD592; --yellow:#F6E43F; --yellow-ink:#2A2400;
+    --line:#22336A; --line-strong:#33498A; --margin:#3FB873;
+    --sheet:#17264F; --chip:#1D2C5C; --focus:#F6E43F;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1730; --surface:#14214A; --ink:#EEF2FF; --ink-soft:#A9B6D6;
+  --blue:#8EA8FF; --green:#5CD592; --yellow:#F6E43F; --yellow-ink:#2A2400;
+  --line:#22336A; --line-strong:#33498A; --margin:#3FB873;
+  --sheet:#17264F; --chip:#1D2C5C; --focus:#F6E43F;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:2px solid var(--ink)}
+.bar{display:flex;align-items:center;gap:20px;min-height:64px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:22px;letter-spacing:-.02em;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
+.brand .dot{width:18px;height:18px;border-radius:50%;background:var(--yellow);box-shadow:inset 0 0 0 3px var(--green)}
+nav.tabs{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.tabs a{padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:16px}
+nav.tabs a:hover{background:var(--chip)}
+nav.tabs a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+nav.tabs a.mod{border:2px dashed var(--green)}
+
+/* seyes paper */
+.seyes{
+  background-color:var(--sheet);
+  background-image:
+    linear-gradient(90deg,transparent 30px,var(--margin) 30px,var(--margin) 32px,transparent 32px),
+    linear-gradient(var(--line-strong) 1px,transparent 1px),
+    linear-gradient(var(--line) 1px,transparent 1px),
+    linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:100% 100%,100% 32px,100% 8px,32px 100%;
+  background-position:0 0,0 -1px,0 -1px,-1px 0;
+}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:center;padding:48px 0 40px}
+.hero h1{font-size:clamp(44px,7vw,88px);line-height:.95;letter-spacing:-.035em;margin:0 0 18px;font-weight:800}
+.hero p{font-size:19px;color:var(--ink-soft);max-width:34ch;margin:0 0 22px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;font-size:15px;color:var(--ink-soft)}
+.stats strong{display:block;font-size:30px;color:var(--ink);line-height:1.1}
+.bigsign{position:relative;min-height:330px;border:2px solid var(--ink);border-radius:6px;padding:40px 30px 30px 56px;display:flex;flex-direction:column;justify-content:center;transform:rotate(-1.2deg)}
+.bigsign .txt{font-family:"Permanent Marker","Comic Sans MS",cursive;font-size:clamp(28px,4vw,46px);line-height:1.15;color:var(--blue)}
+.bigsign .meta{margin-top:18px;font-size:15px;color:var(--ink-soft)}
+.bigsign button{position:absolute;right:14px;bottom:-20px;transform:rotate(1.2deg)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:2px solid var(--ink);background:var(--surface);font-weight:600;cursor:pointer;text-decoration:none;color:var(--ink)}
+.btn:hover{background:var(--chip)}
+.btn.primary{background:var(--yellow);color:var(--yellow-ink);border-color:var(--yellow-ink)}
+.btn.primary:hover{filter:brightness(.96)}
+.btn.small{padding:6px 12px;font-size:15px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+/* layout pancartes */
+.view{display:none;padding-bottom:64px}
+.view.on{display:block}
+.layout{display:grid;grid-template-columns:270px 1fr;gap:32px;align-items:start}
+aside.filters{position:sticky;top:calc(84px + env(safe-area-inset-top,0px));max-height:calc(100vh - 100px);overflow:auto;padding-right:6px}
+.fgroup{margin-bottom:20px}
+.fgroup h3{font-size:15px;margin:0 0 8px;color:var(--ink-soft);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1.5px solid var(--line-strong);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:14.5px;cursor:pointer;line-height:1.3}
+.chip .n{color:var(--ink-soft);margin-left:4px;font-size:13px}
+.chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.chip[aria-pressed="true"] .n{color:#E4F7EC}
+.chip.zero{opacity:.55}
+.search{width:100%;padding:11px 14px;border:2px solid var(--ink);border-radius:10px;background:var(--surface);margin-bottom:18px}
+select.sel{width:100%;padding:9px 10px;border:1.5px solid var(--line-strong);border-radius:8px;background:var(--surface)}
+.journees{display:flex;flex-direction:column;gap:4px}
+.jbtn{text-align:left;border:none;background:none;padding:7px 10px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;gap:8px;font-size:15px}
+.jbtn:hover{background:var(--chip)}
+.jbtn[aria-pressed="true"]{background:var(--blue);color:#fff}
+.jbtn .d{font-weight:600}
+.jbtn .n{opacity:.7}
+.resulthead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 16px;flex-wrap:wrap}
+.resulthead h2{margin:0;font-size:24px;letter-spacing:-.01em}
+.resulthead .right{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.filtertoggle{display:none}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.card{position:relative;border:1.5px solid var(--ink);border-radius:4px;cursor:pointer;display:flex;flex-direction:column;background:var(--sheet);text-align:left;padding:0;overflow:hidden}
+.card .face{padding:24px 18px 20px 46px;min-height:190px;display:flex;align-items:center}
+.card .slogan{font-family:"Permanent Marker","Comic Sans MS",cursive;font-size:23px;line-height:1.22;color:var(--blue)}
+.card.g .slogan{color:var(--green)}
+.card.h .slogan span{background:linear-gradient(transparent 38%,var(--yellow) 38%,var(--yellow) 88%,transparent 88%);-webkit-box-decoration-break:clone;box-decoration-break:clone;color:var(--ink)}
+.card .foot{border-top:1.5px solid var(--ink);padding:9px 12px;font-size:14px;display:flex;justify-content:space-between;gap:8px;align-items:center;background:var(--surface)}
+.card .where{color:var(--ink-soft)}
+.card .star{position:absolute;top:10px;right:10px;background:var(--yellow);color:var(--yellow-ink);font-size:12.5px;font-weight:800;padding:3px 9px;border-radius:999px;transform:rotate(6deg)}
+.card .ph{position:absolute;top:10px;left:40px;font-size:12.5px;color:var(--ink-soft)}
+.heart{border:none;background:none;cursor:pointer;font-size:15px;padding:2px 4px;border-radius:6px;color:var(--ink)}
+.heart[aria-pressed="true"]{color:#C0265B}
+.empty{border:2px dashed var(--line-strong);border-radius:12px;padding:36px;text-align:center;color:var(--ink-soft)}
+.empty p{margin:0 0 14px}
+
+/* dialog */
+dialog{border:2px solid var(--ink);border-radius:10px;padding:0;max-width:760px;width:calc(100% - 28px);background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(13,23,48,.55)}
+.dlg-sign{padding:42px 28px 30px 60px}
+.dlg-sign .slogan{font-family:"Permanent Marker","Comic Sans MS",cursive;font-size:clamp(26px,4vw,38px);line-height:1.2;color:var(--blue)}
+.dlg-body{padding:22px 28px 26px;border-top:2px solid var(--ink)}
+.dlg-body img{max-width:100%;border-radius:6px;margin-bottom:14px;display:block}
+.facts{display:grid;grid-template-columns:150px 1fr;gap:8px 16px;margin:0 0 16px;font-size:16px}
+.facts dt{color:var(--ink-soft)}
+.facts dd{margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:14px}
+.note{background:var(--paper);border-left:4px solid var(--green);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:16px}
+.dlg-close{position:absolute;top:10px;right:12px;z-index:2}
+
+/* tactiques */
+.tlist{display:flex;flex-direction:column;gap:12px}
+.tact{border:1.5px solid var(--ink);border-radius:8px;background:var(--surface);overflow:hidden}
+.tact summary{list-style:none;cursor:pointer;padding:16px 18px 16px 22px;display:grid;grid-template-columns:1fr auto;gap:4px 14px;position:relative}
+.tact summary::-webkit-details-marker{display:none}
+.tact summary::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--fam,var(--blue))}
+.tact h3{margin:0;font-size:20px;letter-spacing:-.01em}
+.tact .fam{font-size:14px;color:var(--ink-soft)}
+.tact .plus{grid-row:1/3;grid-column:2;align-self:center;font-size:24px;font-weight:800;transition:transform .2s}
+.tact[open] .plus{transform:rotate(45deg)}
+.tact .tbody{padding:0 22px 18px;max-width:72ch}
+.tact .tbody p{margin:.4em 0 .8em}
+@media (prefers-reduced-motion:reduce){.tact .plus{transition:none}}
+
+/* forms */
+.formwrap{max-width:760px}
+.charte{border:2px solid var(--yellow-ink);background:var(--yellow);color:var(--yellow-ink);border-radius:12px;padding:18px 22px;margin:0 0 26px}
+.charte h2{margin:0 0 8px;font-size:21px}
+.charte ul{margin:0;padding-left:20px}
+.charte li{margin:4px 0}
+.seg{display:inline-flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden;margin-bottom:22px}
+.seg button{border:none;background:var(--surface);padding:9px 18px;font-weight:600;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.field{margin-bottom:18px}
+.field label,.field .lab{display:block;font-weight:600;margin-bottom:6px}
+.field .hint{font-size:14.5px;color:var(--ink-soft);margin:-2px 0 6px}
+.field input[type=text],.field input[type=url],.field input[type=date],.field textarea,.field select{width:100%;padding:10px 12px;border:1.5px solid var(--line-strong);border-radius:8px;background:var(--surface)}
+.field textarea{min-height:90px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:600;margin:20px 0}
+.check input{width:20px;height:20px;margin-top:3px;flex:none}
+.msg{padding:12px 16px;border-radius:8px;margin:14px 0;font-weight:600}
+.msg.ok{background:#DDF4E6;color:#0B4A2A}
+.msg.err{background:#FDE3E3;color:#7A1414}
+.blurbox{border:1.5px dashed var(--line-strong);border-radius:10px;padding:14px}
+.blurbox canvas{max-width:100%;height:auto;display:block;border-radius:6px;cursor:crosshair;touch-action:none;margin:10px 0}
+.blurtools{display:flex;gap:8px;flex-wrap:wrap}
+.mine{margin-top:36px}
+.mine h3{font-size:19px}
+.mine li{margin:6px 0}
+.status{font-size:13px;padding:2px 9px;border-radius:999px;background:var(--chip);margin-left:6px}
+
+/* moderation */
+.moditem{border:1.5px solid var(--ink);border-radius:8px;padding:14px 16px;margin-bottom:12px;background:var(--surface)}
+.moditem .actions{display:flex;gap:8px;margin-top:10px}
+.moditem img{max-width:220px;border-radius:6px;display:block;margin:8px 0}
+
+/* ressources */
+.res{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px}
+.res section{border-top:3px solid var(--ink);padding-top:14px}
+.res h2{font-size:21px;margin:0 0 10px}
+.res ul{list-style:none;padding:0;margin:0}
+.res li{margin:0 0 14px}
+.res li a{font-weight:600}
+.res li span{display:block;font-size:15.5px;color:var(--ink-soft)}
+
+.pagehead{padding:36px 0 22px;max-width:70ch}
+.pagehead h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.03em;margin:0 0 8px;line-height:1}
+.pagehead p{margin:0;color:var(--ink-soft);font-size:18px}
+footer{border-top:2px solid var(--ink);padding:26px 0 40px;font-size:15px;color:var(--ink-soft)}
+.banner{background:var(--chip);padding:10px 0;font-size:15px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:34px;padding-top:30px}
+  .layout{grid-template-columns:1fr}
+  aside.filters{position:static;max-height:none;display:none;border:1.5px solid var(--line-strong);border-radius:12px;padding:16px;background:var(--surface)}
+  aside.filters.open{display:block}
+  .filtertoggle{display:inline-flex}
+  nav.tabs{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:8px}
+  nav.tabs a{white-space:nowrap}
+  .row2{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr;gap:2px}
+  .facts dd{margin-bottom:8px}
+  .dlg-sign{padding:36px 20px 24px 48px}
+}
+/* --- ajouts version autonome --- */
+.htag{display:inline-block;font-weight:700;color:var(--green);text-decoration:none;font-size:14px;padding:1px 8px;border-radius:999px;background:transparent;border:1.5px solid var(--green)}
+.htag:hover{background:var(--green);color:#fff}
+.card .foot{flex-wrap:wrap}
+.mvt{border:2px solid var(--ink);border-radius:12px;padding:22px 24px;margin:0 0 22px;background:var(--surface)}
+.mvt .htag{font-size:15px}
+.mvt h2{margin:10px 0 4px;font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;line-height:1.15}
+.mvt .per{color:var(--ink-soft);margin:0 0 10px}
+.mvt p{max-width:72ch}
+.srcs{font-size:15px;color:var(--ink-soft)}
+.srcs a{margin-right:12px}
+.timeline{list-style:none;padding:0;margin:0 0 40px;border-left:3px solid var(--blue);margin-left:10px}
+.timeline li{position:relative;padding:0 0 18px 26px}
+.timeline li::before{content:"";position:absolute;left:-10px;top:8px;width:17px;height:17px;border-radius:50%;background:var(--yellow);border:3px solid var(--blue)}
+.timeline li.later::before{background:var(--surface);border-style:dashed}
+.tl{display:grid;grid-template-columns:120px 1fr auto;gap:4px 18px;align-items:baseline;text-decoration:none;color:var(--ink);padding:10px 14px;border-radius:10px}
+.tl:hover{background:var(--chip)}
+.tl .d{font-weight:800;font-size:18px}
+.tl .t{font-size:19px;font-weight:600}
+.tl .meta{grid-column:2/3;font-size:15px;color:var(--ink-soft)}
+.tl .n{grid-row:1/3;grid-column:3;font-size:15px;color:var(--ink-soft);text-align:right}
+.badge{display:inline-block;font-size:13px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--yellow);color:var(--yellow-ink);margin-left:6px;vertical-align:middle}
+.typechip{display:inline-block;font-size:14px;padding:2px 10px;border-radius:999px;background:var(--chip)}
+.mhead{padding:36px 0 10px;max-width:74ch}
+.mhead .bigtag{font-family:"Permanent Marker","Comic Sans MS",cursive;font-size:clamp(34px,6vw,64px);color:var(--green);line-height:1;margin:0 0 10px;word-break:break-word}
+.mhead h1{font-size:clamp(26px,3.6vw,38px);margin:0 0 10px;letter-spacing:-.02em;line-height:1.1}
+.mhead .back{display:inline-block;margin-bottom:18px;font-weight:600}
+.mfacts{display:grid;grid-template-columns:150px 1fr;gap:8px 16px;margin:18px 0;max-width:74ch}
+.mfacts dt{color:var(--ink-soft)}
+.mfacts dd{margin:0}
+.mctx{font-size:18.5px;line-height:1.6;max-width:68ch}
+.sectitle{font-size:22px;margin:34px 0 14px;letter-spacing:-.01em}
+.mtacts{display:flex;flex-wrap:wrap;gap:8px}
+.mtacts a{text-decoration:none}
+@media (max-width:900px){
+  .tl{grid-template-columns:1fr auto}
+  .tl .d{grid-column:1/2}
+  .tl .meta{grid-column:1/2}
+  .tl .n{grid-row:1/2;grid-column:2}
+  .mfacts{grid-template-columns:1fr;gap:2px}
+  .mfacts dd{margin-bottom:8px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#pancartes"><span class="dot" aria-hidden="true"></span>Atlas des manifs</a>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#pancartes" data-tab="pancartes">Pancartes</a>
+      <a href="#manifs" data-tab="manifs">Manifs</a>
+      <a href="#tactiques" data-tab="tactiques">Tactiques</a>
+      <a href="#contribuer" data-tab="contribuer">Contribuer</a>
+      <a href="#ressources" data-tab="ressources">Ressources</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- PANCARTES -->
+<section class="view" id="v-pancartes">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Atlas des manifs</h1>
+        <p>Les pancartes des mobilisations, rangées comme dans un atlas : par manif, par ville, par jeu de mots, par colère. On commence par le mouvement de l’automne 2026.</p>
+        <div class="stats">
+          <div><strong id="stP">0</strong>pancartes</div>
+          <div><strong id="stM">0</strong>manifs</div>
+          <div><strong id="stV">0</strong>villes</div>
+          <div><strong id="stT">0</strong>tactiques</div>
+        </div>
+      </div>
+      <div class="bigsign seyes" id="bigsign" aria-live="polite">
+        <div class="txt" id="bigTxt" role="button" tabindex="0"></div>
+        <div class="meta" id="bigMeta"></div>
+        <button class="btn primary small" id="bigNext" type="button">Une autre pancarte</button>
+      </div>
+    </div>
+
+    <div class="layout">
+      <aside class="filters" id="filters" aria-label="Filtres">
+        <label class="sr" for="q">Rechercher</label>
+        <input class="search" id="q" type="search" placeholder="Rechercher un mot, une ville…">
+        <div class="fgroup"><h3>Type d’événement</h3><div class="chips" id="fType"></div></div>
+        <div class="fgroup"><h3>Manif</h3><div class="journees" id="fJ"></div></div>
+        <div class="fgroup"><h3>Ville</h3><select class="sel" id="fVille" aria-label="Ville"><option value="">Toutes les villes</option></select></div>
+        <div id="facetBox"></div>
+        <button class="btn small" id="reset" type="button">Effacer les filtres</button>
+      </aside>
+      <div>
+        <div class="resulthead">
+          <h2 id="rCount">Pancartes</h2>
+          <div class="right">
+            <button class="btn small filtertoggle" id="ftoggle" type="button" aria-expanded="false" aria-controls="filters">Filtres</button>
+            <label class="sr" for="sort">Trier</label>
+            <select class="sel" id="sort" style="width:auto">
+              <option value="date">Plus récentes d’abord</option>
+              <option value="old">Plus anciennes d’abord</option>
+              <option value="pepite">Pépites d’abord</option>
+            </select>
+            <a class="btn small primary" href="#contribuer">Ajouter une pancarte</a>
+          </div>
+        </div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFS -->
+<section class="view" id="v-manifs">
+  <div class="wrap" id="manifsList">
+    <div class="pagehead">
+      <h1>Manifs</h1>
+      <p>Chaque hashtag renvoie ici : la date, le type d’événement, le contexte et toutes les pancartes de la journée.</p>
+    </div>
+    <div class="chips" id="mType" style="margin-bottom:24px"></div>
+    <div id="mvts"></div>
+  </div>
+  <div class="wrap" id="manifDetail" hidden></div>
+</section>
+
+<!-- TACTIQUES -->
+<section class="view" id="v-tactiques">
+  <div class="wrap">
+    <div class="pagehead">
+      <h1>Tactiques</h1>
+      <p>Tout ce que les cortèges inventent pour se faire entendre : costumes, objets gonflables, danses, banderoles, blocages, outils numériques.</p>
+    </div>
+    <label class="sr" for="tq">Rechercher une tactique</label>
+    <input class="search" id="tq" type="search" placeholder="Rechercher une tactique…" style="max-width:520px">
+    <div class="chips" id="tFam" style="margin-bottom:22px"></div>
+    <div class="tlist" id="tlist"></div>
+  </div>
+</section>
+
+<!-- CONTRIBUER -->
+<section class="view" id="v-contribuer">
+  <div class="wrap formwrap">
+    <div class="pagehead">
+      <h1>Contribuer</h1>
+      <p>Proposez une pancarte, une manif ou une tactique. Chaque proposition est relue avant d’apparaître dans l’atlas.</p>
+    </div>
+    <div class="charte">
+      <h2>Avant d’envoyer une photo</h2>
+      <ul>
+        <li>Floutez tous les visages, ou cadrez uniquement sur la pancarte. Beaucoup de manifestant·es sont mineur·es.</li>
+        <li>N’envoyez que vos propres photos, ou des photos dont l’auteur·ice vous a donné son accord.</li>
+        <li>Indiquez qui créditer : la personne qui a pris la photo, et celle qui a fait la pancarte si vous la connaissez.</li>
+        <li>Pas de plaques d’immatriculation, de noms d’établissement ou de détails qui permettent d’identifier quelqu’un.</li>
+      </ul>
+    </div>
+    <div class="seg" role="group" aria-label="Type de contribution">
+      <button type="button" data-seg="pancarte" aria-pressed="true">Une pancarte</button>
+      <button type="button" data-seg="manif" aria-pressed="false">Une manif</button>
+      <button type="button" data-seg="tactique" aria-pressed="false">Une tactique</button>
+    </div>
+    <div id="formMsg"></div>
+
+    <form name="pancarte" id="form-pancarte" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" novalidate>
+      <input type="hidden" name="form-name" value="pancarte">
+      <p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
+      <div class="field">
+        <label for="pTexte">Texte de la pancarte *</label>
+        <textarea id="pTexte" name="texte" required placeholder="Recopiez le texte tel qu’il est écrit"></textarea>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="pVille">Ville</label><input id="pVille" name="ville" type="text" placeholder="Ex. Nantes"></div>
+        <div class="field"><label for="pManif">Manif</label><select id="pManif" name="manif"></select></div>
+      </div>
+      <div class="row2" id="pAutre" hidden>
+        <div class="field"><label for="pAutreDate">Date</label><input id="pAutreDate" name="autre_date" type="date"></div>
+        <div class="field"><label for="pAutreNom">Nom de la manif</label><input id="pAutreNom" name="autre_nom" type="text" placeholder="Ex. Marche pour le climat"></div>
+      </div>
+      <div id="pFacets"></div>
+      <input type="hidden" name="registre" id="h-registre">
+      <input type="hidden" name="procede" id="h-procede">
+      <input type="hidden" name="sujet" id="h-sujet">
+      <input type="hidden" name="references" id="h-references">
+      <div class="field"><label for="pForme">Forme</label><select id="pForme" name="forme"></select></div>
+      <div class="field">
+        <label for="pLien">Lien vers la publication d’origine</label>
+        <div class="hint">Instagram, TikTok, article de presse… Le lien sert à créditer et à retrouver la source.</div>
+        <input id="pLien" name="lien" type="url" placeholder="https://">
+      </div>
+      <div class="row2">
+        <div class="field"><label for="pCredit">Photo prise par</label><input id="pCredit" name="credit_photo" type="text" placeholder="Nom ou @pseudo"></div>
+        <div class="field"><label for="pAuteur">Pancarte faite par</label><input id="pAuteur" name="auteur_pancarte" type="text" placeholder="Si vous le savez"></div>
+      </div>
+      <div class="field">
+        <span class="lab">Photo (facultatif)</span>
+        <div class="blurbox">
+          <div class="hint">Après avoir choisi la photo, tracez un rectangle sur chaque visage pour le flouter. Seule la version floutée est envoyée.</div>
+          <input id="pFile" type="file" accept="image/*" aria-label="Choisir une photo">
+          <input id="pPhoto" name="photo" type="file" hidden>
+          <canvas id="pCanvas" hidden></canvas>
+          <div class="blurtools" id="blurTools" hidden>
+            <button class="btn small" type="button" id="undoBlur">Annuler le dernier flou</button>
+            <button class="btn small" type="button" id="removePhoto">Retirer la photo</button>
+          </div>
+        </div>
+      </div>
+      <div class="field"><label for="pNote">Contexte ou remarque</label><textarea id="pNote" name="note" placeholder="Origine du jeu de mots, référence, reprise ailleurs dans le monde…"></textarea></div>
+      <div class="field"><label for="pContact">Votre contact (facultatif, jamais publié)</label><input id="pContact" name="contact" type="text" placeholder="E-mail ou @pseudo, si on a une question"></div>
+      <label class="check"><input type="checkbox" id="pOk" name="confirmation" value="oui"> Je confirme que les visages sont floutés ou hors cadre, et que j’ai le droit de partager cette photo.</label>
+      <button class="btn primary" type="submit">Envoyer la pancarte</button>
+    </form>
+
+    <form name="manif" id="form-manif" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate hidden>
+      <input type="hidden" name="form-name" value="manif">
+      <p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
+      <div class="row2">
+        <div class="field"><label for="mNom">Nom de la manif *</label><input id="mNom" name="nom" type="text" placeholder="Ex. Marche pour le climat"></div>
+        <div class="field"><label for="mDate">Date *</label><input id="mDate" name="date" type="date"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="mType2">Type d’événement</label><select id="mType2" name="type"></select></div>
+        <div class="field"><label for="mVilles">Villes</label><input id="mVilles" name="villes" type="text" placeholder="Ex. Paris, Lyon"></div>
+      </div>
+      <div class="field"><label for="mCtx">Contexte</label><div class="hint">Pourquoi cette manif, qui appelait, ce qui s’est passé.</div><textarea id="mCtx" name="contexte"></textarea></div>
+      <div class="field"><label for="mSrc">Liens</label><textarea id="mSrc" name="sources" placeholder="Un lien par ligne"></textarea></div>
+      <div class="field"><label for="mContact">Votre contact (facultatif, jamais publié)</label><input id="mContact" name="contact" type="text"></div>
+      <button class="btn primary" type="submit">Envoyer la manif</button>
+    </form>
+
+    <form name="tactique" id="form-tactique" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate hidden>
+      <input type="hidden" name="form-name" value="tactique">
+      <p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
+      <div class="field"><label for="tNom">Nom de la tactique *</label><input id="tNom" name="nom" type="text" placeholder="Ex. Pavés gonflables"></div>
+      <div class="field"><label for="tFamSel">Famille</label><select id="tFamSel" name="famille"></select></div>
+      <div class="field"><label for="tDesc">Description *</label><textarea id="tDesc" name="description" placeholder="Comment ça marche, ce que ça produit"></textarea></div>
+      <div class="row2">
+        <div class="field"><label for="tLieu">Où l’avez-vous vue ?</label><input id="tLieu" name="lieu" type="text" placeholder="Ville, date"></div>
+        <div class="field"><label for="tLien">Lien</label><input id="tLien" name="lien" type="url" placeholder="https://"></div>
+      </div>
+      <div class="field"><label for="tCredit">À créditer</label><input id="tCredit" name="credit" type="text" placeholder="Collectif, personne, média"></div>
+      <div class="field"><label for="tContact">Votre contact (facultatif, jamais publié)</label><input id="tContact" name="contact" type="text"></div>
+      <button class="btn primary" type="submit">Envoyer la tactique</button>
+    </form>
+  </div>
+</section>
+
+<!-- RESSOURCES -->
+<section class="view" id="v-ressources">
+  <div class="wrap">
+    <div class="pagehead">
+      <h1>Ressources</h1>
+      <p>Boîtes à outils, droits, inspirations et lectures sur les mouvements.</p>
+    </div>
+    <div class="res">
+      <section>
+        <h2>Boîtes à outils</h2>
+        <ul>
+          <li><a href="https://beautifultrouble.org" target="_blank" rel="noopener">Beautiful Trouble</a><span>Une boîte à outils collaborative de tactiques, principes et récits d’action créative.</span></li>
+          <li><a href="https://toolsforaction.net" target="_blank" rel="noopener">Tools for Action</a><span>Objets gonflables et dispositifs pour l’action directe créative et non violente.</span></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Droits et sécurité</h2>
+        <ul>
+          <li><a href="https://www.ldh-france.org" target="_blank" rel="noopener">Ligue des droits de l’Homme</a><span>Repères sur le droit de manifester et les observatoires des libertés.</span></li>
+          <li><a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a><span>Le droit à l’image et la protection des données, notamment pour les mineur·es.</span></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Inspiration</h2>
+        <ul>
+          <li><a href="https://www.archive-arn.fr" target="_blank" rel="noopener">Atlas des Régions Naturelles</a><span>L’archive photographique d’Éric Tabuchi et Nelly Monnier, qui a inspiré la logique de classement de ce site.</span></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Lire sur l’automne 2026</h2>
+        <ul>
+          <li><a href="https://www.politis.fr/articles/2026/10/en-images-qui-nous-protege-de-la-police-dans-le-cortege-de-la-mobilisation-lyceenne-a-paris/" target="_blank" rel="noopener">Politis, reportage photo de l’acte V</a><span>Le cortège parisien du 13 octobre, par Maxime Sirvins.</span></li>
+          <li><a href="https://www.sudradio.fr/societe/batailles-daura-bismillah-cest-les-tenebres-les-lyceens-manifestent-avec-les-codes-du-web" target="_blank" rel="noopener">AFP, les lycéens manifestent avec les codes du web</a><span>Batailles d’aura, mèmes et humour dans les cortèges.</span></li>
+          <li><a href="https://www.publicsenat.fr/dossier/mobilisation-lycenne" target="_blank" rel="noopener">Public Sénat, dossier mobilisation lycéenne</a><span>Tous les articles sur le mouvement.</span></li>
+          <li><a href="https://www.politis.fr/dossiers/17-octobre-macron-recolte-la-colere/" target="_blank" rel="noopener">Politis, dossier du 17 octobre</a><span>Reportages sur la convergence des colères.</span></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  Atlas des manifs recense des pancartes et des tactiques de mobilisation. Chaque fiche renvoie à sa source et crédite les personnes connues. Vous reconnaissez une pancarte, ou vous voulez qu’une photo soit retirée ? Écrivez-nous via la page <a href="#contribuer">Contribuer</a>.
+</div></footer>
+
+<dialog id="dlg" aria-labelledby="dlgSlogan">
+  <button class="btn small dlg-close" type="button" id="dlgClose">Fermer</button>
+  <div class="dlg-sign seyes"><div class="slogan" id="dlgSlogan"></div></div>
+  <div class="dlg-body" id="dlgBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
