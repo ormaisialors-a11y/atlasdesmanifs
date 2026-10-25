@@ -1,0 +1,24 @@
+{
+  "slug": "13-octobre-2026",
+  "hashtag": "#13octobre2026",
+  "date": "2026-10-13",
+  "type": "Manifestation lycéenne",
+  "mouvement": "automne-2026",
+  "villes": [
+    "Paris",
+    "Nancy",
+    "Marseille"
+  ],
+  "chiffres": "",
+  "contexte": "Cinquième journée du mouvement. À Paris, deux cortèges défilent, dont l’un part de l’Hôtel de Ville vers les Invalides. Les violences policières sont au cœur des pancartes. C’est aussi le moment où les codes du web envahissent les cortèges : batailles d’aura, gestes viraux, slogans tirés des mèmes. Les regards se tournent déjà vers la journée du 17 octobre.",
+  "sources": [
+    {
+      "titre": "Politis, reportage photo",
+      "url": "https://www.politis.fr/articles/2026/10/en-images-qui-nous-protege-de-la-police-dans-le-cortege-de-la-mobilisation-lyceenne-a-paris/"
+    },
+    {
+      "titre": "AFP, les lycéens manifestent avec les codes du web",
+      "url": "https://www.sudradio.fr/societe/batailles-daura-bismillah-cest-les-tenebres-les-lyceens-manifestent-avec-les-codes-du-web"
+    }
+  ]
+}

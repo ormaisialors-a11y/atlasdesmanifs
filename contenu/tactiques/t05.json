@@ -1,0 +1,21 @@
+{
+  "id": "t05",
+  "nom": "Chaîne humaine de protection",
+  "famille": "protection",
+  "description": "Des adultes, enseignants, parents ou syndicalistes, se donnent le bras de chaque côté du cortège pour le protéger.",
+  "exemples": [
+    {
+      "texte": "Des enseignants du lycée Paul-Éluard autour des élèves, à Saint-Denis.",
+      "manif": "blocus-rentree-2026",
+      "source": "VL Media",
+      "url": "https://vl-media.fr/?p=430280"
+    },
+    {
+      "texte": "Cortège parisien.",
+      "manif": "13-octobre-2026",
+      "source": "Politis",
+      "url": "https://www.politis.fr/articles/2026/10/en-images-qui-nous-protege-de-la-police-dans-le-cortege-de-la-mobilisation-lyceenne-a-paris/"
+    }
+  ],
+  "credit": ""
+}

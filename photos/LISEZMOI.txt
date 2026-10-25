@@ -1,0 +1,2 @@
+Les photos des pancartes vont dans ce dossier.
+Nommez-les comme la pancarte (p16.jpg) et indiquez le chemin dans son fichier : "fichier": "photos/p16.jpg".

@@ -1,0 +1,15 @@
+{
+  "id": "t03",
+  "nom": "Danser une trend face aux policiers",
+  "famille": "danse",
+  "description": "Reprendre la chorégraphie du moment sur les réseaux, devant le cordon de police, et la filmer. Le contraste fait passer le message sans un mot.",
+  "exemples": [
+    {
+      "texte": "Sur une chanson de Patrick Sébastien, devant des blocus.",
+      "manif": "blocus-rentree-2026",
+      "source": "AFP, via Sud Radio",
+      "url": "https://www.sudradio.fr/societe/batailles-daura-bismillah-cest-les-tenebres-les-lyceens-manifestent-avec-les-codes-du-web"
+    }
+  ],
+  "credit": ""
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "17-octobre-2026",
+  "hashtag": "#17octobre2026",
+  "date": "2026-10-17",
+  "type": "Manifestation nationale",
+  "mouvement": "automne-2026",
+  "villes": [
+    "Paris",
+    "Toulouse",
+    "Lille",
+    "Nice",
+    "Montpellier",
+    "Calais"
+  ],
+  "chiffres": "550 000 manifestant·es selon le ministère de l’Intérieur, 800 000 selon les organisateurs",
+  "contexte": "Une journée lancée début septembre sur les réseaux sociaux contre la hausse du prix de l’essence et du coût de la vie, que les organisations lycéennes ont appelé à rejoindre. Gilets jaunes, lycéen·nes, étudiant·es, cheminot·es et paysan·nes défilent ensemble, au premier jour des vacances scolaires. La journée est marquée par des affrontements et de nombreuses dégradations dans plusieurs grandes villes.",
+  "sources": [
+    {
+      "titre": "Politis, dossier du 17 octobre",
+      "url": "https://www.politis.fr/dossiers/17-octobre-macron-recolte-la-colere/"
+    },
+    {
+      "titre": "vacances-scolaires.com, bilan",
+      "url": "https://vacances-scolaires.com/actualites/2026/10/17/manifestations-du-17-octobre-2026-la-jeunesse-et-les-syndicats-durcissent-le-ton-un-lourd-bilan-humain-et-materiel/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "t06",
+  "nom": "Filmer et raconter soi-même",
+  "famille": "reseaux",
+  "description": "Filmer les forces de l’ordre et les moments du cortège, puis publier ses propres vidéos, souvent sous la légende « Ce que les médias ne montreront jamais ».",
+  "exemples": [
+    {
+      "texte": "Paris.",
+      "manif": "13-octobre-2026",
+      "source": "AFP, via Sud Radio",
+      "url": "https://www.sudradio.fr/societe/batailles-daura-bismillah-cest-les-tenebres-les-lyceens-manifestent-avec-les-codes-du-web"
+    }
+  ],
+  "credit": ""
+}

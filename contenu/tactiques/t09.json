@@ -1,0 +1,15 @@
+{
+  "id": "t09",
+  "nom": "Banderole de tête",
+  "famille": "affichage",
+  "description": "Une grande banderole portée en tête de cortège, avec un slogan court qui donne le ton de la journée et sera repris par les photographes.",
+  "exemples": [
+    {
+      "texte": "« Écoles sans argent, pays sans avenir », Nantes.",
+      "manif": "6-octobre-2026",
+      "source": "AFP, via Sud Radio",
+      "url": "https://www.sudradio.fr/societe/mouvement-lyceen-des-milliers-de-personnes-ont-commence-a-defiler"
+    }
+  ],
+  "credit": ""
+}

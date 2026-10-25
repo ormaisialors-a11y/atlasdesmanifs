@@ -1,0 +1,26 @@
+{
+  "slug": "blocus-rentree-2026",
+  "hashtag": "#blocusrentree2026",
+  "date": "2026-09-18",
+  "dateFin": "2026-10-02",
+  "type": "Blocus",
+  "mouvement": "automne-2026",
+  "villes": [
+    "Créteil",
+    "Paris",
+    "Lille",
+    "Toulouse"
+  ],
+  "chiffres": "Environ 400 établissements fermés le 2 octobre",
+  "contexte": "Tout commence le 18 septembre au lycée Saint-Exupéry de Créteil. Fin septembre, une soixantaine de lycées sont bloqués en Île-de-France, puis le mouvement gagne tout le pays : des centaines d’actions sont recensées autour du 1er octobre. Les élèves dénoncent des classes surchargées, des professeurs non remplacés, des bâtiments dégradés et des emplois du temps à trous. Les blocus donnent lieu à des face-à-face tendus avec la police.",
+  "sources": [
+    {
+      "titre": "Le Bonbon",
+      "url": "https://lebonbon.fr/paris/news/blocage-lycees-colere-toujours-plus-vive-quelle-est-suite-mouvement/"
+    },
+    {
+      "titre": "Euronews",
+      "url": "https://fr.euronews.com/2026/10/02/les-lyceens-francais-affrontent-la-police-les-protestations-scolaires-setendent-a-tout-le"
+    }
+  ]
+}

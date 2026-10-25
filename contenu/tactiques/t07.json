@@ -1,0 +1,15 @@
+{
+  "id": "t07",
+  "nom": "Blocus d’établissement",
+  "famille": "blocage",
+  "description": "Bloquer l’entrée du lycée tôt le matin pour empêcher les cours et rendre la mobilisation visible.",
+  "exemples": [
+    {
+      "texte": "Environ 400 établissements fermés le 2 octobre.",
+      "manif": "blocus-rentree-2026",
+      "source": "Le Bonbon",
+      "url": "https://lebonbon.fr/paris/news/blocage-lycees-colere-toujours-plus-vive-quelle-est-suite-mouvement/"
+    }
+  ],
+  "credit": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "t01",
+  "nom": "Bataille d’aura",
+  "famille": "danse",
+  "description": "Un duel de charisme : chacun son tour enchaîne gestes et poses, sous les rires. Filmée, la scène devient virale et suspend un instant le face-à-face, parfois avec un proviseur ou un policier qui se prête au jeu.",
+  "exemples": [
+    {
+      "texte": "Blocus et cortèges lycéens d’octobre 2026.",
+      "manif": "13-octobre-2026",
+      "source": "AFP, via Sud Radio",
+      "url": "https://www.sudradio.fr/societe/batailles-daura-bismillah-cest-les-tenebres-les-lyceens-manifestent-avec-les-codes-du-web"
+    }
+  ],
+  "credit": ""
+}

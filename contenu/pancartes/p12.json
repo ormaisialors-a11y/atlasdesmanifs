@@ -1,0 +1,28 @@
+{
+  "id": "p12",
+  "texte": "Bismillah, c’est les ténèbres",
+  "ville": "Paris",
+  "manif": "13-octobre-2026",
+  "registre": [
+    "Mème, culture web"
+  ],
+  "sujet": [
+    "Jeunesse"
+  ],
+  "forme": [
+    "Inscription"
+  ],
+  "references": [
+    "Web"
+  ],
+  "auteur": "",
+  "photo": {
+    "credit": "Maxime Sirvins / Politis",
+    "fichier": ""
+  },
+  "source": {
+    "titre": "Politis",
+    "url": "https://www.politis.fr/articles/2026/10/en-images-qui-nous-protege-de-la-police-dans-le-cortege-de-la-mobilisation-lyceenne-a-paris/"
+  },
+  "note": "La formule vient d’un message viral attribué à un prétendu policier infiltré qui empilait les clichés sur le langage des jeunes. Son authenticité n’est pas établie, mais elle est devenue un slogan du mouvement."
+}

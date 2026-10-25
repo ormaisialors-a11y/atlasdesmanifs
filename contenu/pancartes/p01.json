@@ -1,0 +1,25 @@
+{
+  "id": "p01",
+  "texte": "Jeunesse fâchée, pas facho",
+  "ville": "Nantes",
+  "manif": "6-octobre-2026",
+  "registre": [
+    "Jeu de mots",
+    "Revendication"
+  ],
+  "sujet": [
+    "Jeunesse"
+  ],
+  "forme": [],
+  "references": [],
+  "auteur": "",
+  "photo": {
+    "credit": "AFP",
+    "fichier": ""
+  },
+  "source": {
+    "titre": "AFP, via Sud Radio",
+    "url": "https://www.sudradio.fr/societe/mouvement-lyceen-des-milliers-de-personnes-ont-commence-a-defiler"
+  },
+  "note": ""
+}

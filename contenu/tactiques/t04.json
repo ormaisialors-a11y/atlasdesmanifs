@@ -1,0 +1,15 @@
+{
+  "id": "t04",
+  "nom": "Défiler costumé",
+  "famille": "costumes",
+  "description": "Venir en super-héros, en personnage de série ou en figure politique caricaturée. Le costume attire l’œil des photographes, protège un peu l’anonymat et rend le cortège joyeux.",
+  "exemples": [
+    {
+      "texte": "Défilé lycéen costumé à Nancy.",
+      "manif": "13-octobre-2026",
+      "source": "AFP",
+      "url": "https://www.sudradio.fr/societe/batailles-daura-bismillah-cest-les-tenebres-les-lyceens-manifestent-avec-les-codes-du-web"
+    }
+  ],
+  "credit": ""
+}

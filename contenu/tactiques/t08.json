@@ -1,0 +1,14 @@
+{
+  "id": "t08",
+  "nom": "Pavés gonflables",
+  "famille": "gonflables",
+  "description": "De grands pavés gonflables argentés que les manifestant·es se renvoient au-dessus du cortège. Ils jouent avec l’image du pavé tout en restant inoffensifs.",
+  "exemples": [
+    {
+      "texte": "Le collectif qui les a imaginés.",
+      "source": "Tools for Action",
+      "url": "https://toolsforaction.net"
+    }
+  ],
+  "credit": "Tools for Action"
+}

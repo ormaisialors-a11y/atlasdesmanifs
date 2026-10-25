@@ -1,0 +1,27 @@
+{
+  "slug": "6-octobre-2026",
+  "hashtag": "#6octobre2026",
+  "date": "2026-10-06",
+  "type": "Manifestation nationale",
+  "mouvement": "automne-2026",
+  "villes": [
+    "Paris",
+    "Nantes",
+    "Lyon",
+    "Marseille",
+    "Rennes",
+    "Bordeaux"
+  ],
+  "chiffres": "256 000 manifestant·es selon le ministère de l’Intérieur, dont 56 000 à Paris ; 450 000 selon l’Union syndicale lycéenne",
+  "contexte": "Le point culminant du mouvement lycéen. Les élèves sont rejoints par des professeurs, des parents, des étudiant·es et des syndicats, dans une trentaine de villes. À Paris, le cortège va de République à Nation. Dans les cortèges, les pancartes contre les violences policières sont presque aussi nombreuses que celles qui réclament des moyens pour l’école.",
+  "sources": [
+    {
+      "titre": "AFP, via Paris Match Belgique",
+      "url": "https://www.parismatch.be/actualites/monde/2026/10/06/mouvement-lyceen-en-france-plus-de-250000-manifestants-dans-les-rues-la-mobilisation-appelee-a-se-poursuivre-EOPSKOPQAVAJBHRVJAMTH5CY5M/"
+    },
+    {
+      "titre": "Public Sénat, reportage",
+      "url": "https://www.publicsenat.fr/actualites/politique/reportage-on-est-tous-dans-le-meme-bateau-quand-enseignants-et-syndicats-rejoignent-la-mobilisation-lyceenne"
+    }
+  ]
+}
