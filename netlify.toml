@@ -1,0 +1,5 @@
+# Configuration Netlify de l'Atlas des manifs
+[build]
+  command = "node build.js"
+  publish = "."
+  functions = "netlify/functions"
