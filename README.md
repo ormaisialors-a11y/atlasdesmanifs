@@ -15,7 +15,10 @@
 | `build.js` | Rassemble le dossier `contenu/` à chaque mise en ligne |
 | `netlify/functions/` | Publie les contributions du formulaire, ou les met en attente (manifs, contenus suspects) |
 | `moderation.json` | Les règles anti-trolls (mots interdits, limite par heure, interrupteur de publication directe) |
-| `data.js` | Fabriqué automatiquement par `build.js`. **Ne pas le modifier à la main.** |
+| `data.json` et `data.js` | Fabriqués automatiquement à partir de `contenu/`. **Ne pas les modifier à la main.** |
+| `.github/workflows/assembler.yml` | Demande à GitHub de rassembler le contenu dans `data.json` à chaque contribution |
+
+**Comment le site s’actualise.** Le site lit ses pancartes, manifs, tactiques, chants et photos **en direct sur GitHub** (le dépôt doit être public). Une contribution apparaît donc sur le site une à deux minutes après son envoi, **sans mise en ligne Netlify** : elle ne consomme aucun crédit. Netlify ne se republie que quand le code ou le design changent (`index.html`, `app.js`, `netlify/`…), quelques fois par mois au plus. C’est réglé dans `netlify.toml` (ligne `ignore`).
 
 Un fichier par élément, c’est ce qui permet à l’atlas de grandir : 10 ou 3 000 pancartes, la méthode reste la même, et plusieurs propositions peuvent arriver en même temps sans se gêner.
 

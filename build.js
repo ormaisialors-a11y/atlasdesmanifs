@@ -1,8 +1,10 @@
 /*
   Atlas des manifs : assemble le contenu.
-  Netlify lance ce script à chaque mise en ligne. Il lit tous les fichiers
-  du dossier contenu/ et fabrique data.js, que le site charge.
-  Ne modifiez pas data.js à la main : il est réécrit à chaque fois.
+  Ce script lit tous les fichiers du dossier contenu/ et fabrique data.json
+  (lu en direct par le site) et data.js (version de secours).
+  GitHub le lance automatiquement à chaque changement dans contenu/
+  (voir .github/workflows/assembler.yml), et Netlify à chaque mise en ligne.
+  Ne modifiez pas data.json ni data.js à la main : ils sont réécrits à chaque fois.
 */
 const fs = require("fs");
 const path = require("path");
@@ -29,6 +31,9 @@ if (erreurs.length) {
   console.error("\nCes fichiers contiennent une erreur d’écriture et ont été ignorés :\n" + erreurs.join("\n") + "\n");
 }
 
+// data.json : lu en direct par le site depuis GitHub
+fs.writeFileSync(path.join(__dirname, "data.json"), JSON.stringify(ATLAS) + "\n");
+// data.js : version de secours, publiée avec le site
 fs.writeFileSync(
   path.join(__dirname, "data.js"),
   "/* Fichier fabriqué automatiquement par build.js à partir du dossier contenu/. Ne pas modifier à la main. */\n" +

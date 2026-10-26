@@ -1,0 +1,47 @@
+# Atlas des manifs : à chaque contribution (ou modification dans contenu/),
+# GitHub rassemble le contenu dans data.json, que le site lit en direct.
+# Aucune mise en ligne Netlify n'est nécessaire pour les contributions.
+name: Assembler le contenu
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "contenu/**"
+      - "build.js"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: assembler
+  cancel-in-progress: false
+
+jobs:
+  assembler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Assembler le contenu
+        run: node build.js
+      - name: Enregistrer data.json
+        run: |
+          git config user.name "atlas-assembleur"
+          git config user.email "atlas-assembleur@users.noreply.github.com"
+          git add data.json data.js
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau."
+            exit 0
+          fi
+          git commit -m "Assemblage automatique du contenu"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1

@@ -128,9 +128,11 @@ async function raisonAttente(textes, regles, extra) {
 
 exports.handler = async (event) => {
   if (!TOKEN || !REPO) { console.log("GITHUB_TOKEN ou GITHUB_REPO manquant : la contribution reste dans Netlify Forms."); return { statusCode: 200 }; }
+  console.log(`Dépôt ciblé : ${REPO} (branche ${BRANCH})`);
   let payload;
   try { payload = JSON.parse(event.body).payload; } catch (e) { return { statusCode: 400 }; }
   const form = payload.form_name || (payload.data && payload.data["form-name"]);
+  console.log(`Contribution reçue : formulaire « ${form} »`);
   const d = payload.data || {};
   const stamp = new Date().toISOString().replace(/[-:T]/g, "").slice(0, 12);
   const rnd = Math.random().toString(36).slice(2, 6);
@@ -148,6 +150,7 @@ exports.handler = async (event) => {
         sources: clean(d.sources, 2000).split(/\s+/).map(url).filter(Boolean).map((u) => ({ titre: u.replace(/^https?:\/\/(www\.)?/, "").split("/")[0], url: u }))
       };
       const path = `contenu/manifs/${ids.slug}${nouvelle ? "" : "-doublon-" + rnd}.json`;
+      console.log(`Manif envoyée en validation : ${ids.hashtag}`);
       await openPR([{ path, base64: json(m) }], `Proposition de manif ${ids.hashtag}`,
         `Manif : ${dateAff(m.date)} (${type})`,
         `**Nouvelle manif proposée** : ${ids.hashtag}\n\n- Date : ${dateAff(m.date)}\n- Type : ${type}\n- Villes : ${m.villes.join(", ") || "non précisées"}\n\n${m.contexte || "_Pas de contexte._"}` +
@@ -239,10 +242,12 @@ exports.handler = async (event) => {
 
     const raison = await raisonAttente(textes, regles, extra);
     if (raison) {
+      console.log(`Mise en attente (pull request) : ${label}, raison : ${raison}`);
       await openPR(files, `Contribution mise en attente : ${label}`, `[En attente] ${titrePR}`,
         `**Contribution mise en attente automatiquement** : ${raison}.\n\n${corpsPR}` + pied, `${form}-${stamp}-${rnd}`);
     } else {
-      await commitFiles(files, `${AUTO} : ${label}`, BRANCH);
+      const sha = await commitFiles(files, `${AUTO} : ${label}`, BRANCH);
+      console.log(`Publié directement : ${label} (commit ${String(sha).slice(0, 7)})`);
     }
 
     if (manifPR) {

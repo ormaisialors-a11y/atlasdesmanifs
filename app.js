@@ -2,10 +2,13 @@
 (function(){
 "use strict";
 
+/* Où le site lit ses contenus en direct (dépôt GitHub public) */
+var SOURCE = { owner: "ormaisialors-a11y", repo: "atlasdesmanifs", branch: "main" };
+var RAW = "https://raw.githubusercontent.com/"+SOURCE.owner+"/"+SOURCE.repo+"/"+SOURCE.branch+"/";
 var D = window.ATLAS || {}; ["mouvements","manifs","pancartes","tactiques","chants"].forEach(function(k){ if(!Array.isArray(D[k])) D[k]=[]; });
 var FACETS = {
   registre:{label:"Registre", values:["Revendication","Interpellation","Cri de colère","Jeu de mots","Humour","Détournement","Témoignage","Mème, culture web","Poésie","Solidarité","Méta","Autre"]},
-  sujet:{label:"Sujet", values:["Démocratie","Antifascisme","Antiracisme","Justice","Droits","Éducation","Jeunesse","Violences policières","Économie","Travail","Féminisme","LGBTQIA+","Écologie","Pouvoir d’achat","Inégalités et justice sociale","Numérique","Culture","Autre"]},
+  sujet:{label:"Sujet", values:["Démocratie","Antifascisme","Antiracisme","Anticapitalisme","Justice","Droits","Éducation","Jeunesse","Violences policières","Économie","Travail","Féminisme","LGBTQIA+","Écologie","Pouvoir d’achat","Inégalités et justice sociale","Numérique","Culture","Autre"]},
   references:{label:"Références", values:["Pop culture","Web","Musique","Histoire","Slogan historique","Littérature, arts","Phrase de personnalité politique","Autre"]},
   forme:{label:"Forme", values:["Dessin","Inscription","Impression","Symboles","Drapeau","Vêtements","Affiche","Autocollant","Tag","Costume","Objets détournés","Marionnettes","Instruments","Autre"]}
 };
@@ -163,7 +166,12 @@ function renderFilters(){
   }
   $("facetBox").innerHTML=box;
 }
-function photoOf(p){ return p.photo&&p.photo.fichier?p.photo.fichier:""; }
+function photoOf(p){
+  var f=p.photo&&p.photo.fichier?String(p.photo.fichier):"";
+  if(!f) return "";
+  if(/^https?:\/\//i.test(f)) return f;
+  return location.protocol==="file:"?f:RAW+f.replace(/^\.?\//,"");
+}
 function cardHtml(p){
   var src=photoOf(p), m=manif(p.manif);
   var cap=(p.ville?'<span class="pc-ville">'+esc(p.ville)+'</span>':'')+(m?'<span class="pc-type">'+esc(m.type)+'</span>':'');
@@ -261,7 +269,7 @@ function renderManifs(){
     });
     h+='</ol>';
   });
-  $("mvts").innerHTML=h||'<div class="empty"><p>Aucune manif de ce type pour l’instant.</p></div>';
+  $("mvts").innerHTML=h||(D.manifs.length?'<div class="empty"><p>Aucune manif de ce type pour l’instant.</p></div>':'<div class="empty"><p><strong>Aucune manif pour l’instant.</strong></p><p>Proposez la première : elle obtiendra sa page et son hashtag après relecture.</p><a class="btn primary" href="#contribuer" data-goseg="manif">Proposer une manif</a></div>');
 }
 function renderManifDetail(m){
   var mv=mouvement(m.mouvement);
@@ -297,7 +305,7 @@ function renderTactiques(openId){
     if(q && ((t.nom||"")+" "+(t.description||"")).toLowerCase().indexOf(q)<0) return false;
     return true;
   }).sort(function(a,b){return (a.nom||"").localeCompare(b.nom||"","fr");});
-  if(!list.length){ $("tlist").innerHTML='<div class="empty"><p>Aucune tactique dans cette famille pour l’instant.</p><a class="btn primary" href="#contribuer">Proposer une tactique</a></div>'; return; }
+  if(!list.length){ $("tlist").innerHTML='<div class="empty"><p>'+(D.tactiques.length?'Aucune tactique dans cette famille pour l’instant.':'<strong>Aucune tactique pour l’instant.</strong> Costumes, gonflables, chorés, canulars : partagez la première.')+'</p><a class="btn primary" href="#contribuer" data-goseg="tactique">Proposer une tactique</a></div>'; return; }
   $("tlist").innerHTML=list.map(function(t){
     var f=famOf(t.famille); if(t.famille==="autre") f={label:"Autre"+(t.famillePrecision?" : "+t.famillePrecision:""),color:"#4A5878"};
     var ex=arr(t.exemples).map(function(e){
@@ -326,7 +334,7 @@ function renderChants(){
     if(q && ((c.titre||"")+" "+(c.paroles||"")+" "+(c.air||"")).toLowerCase().indexOf(q)<0) return false;
     return true;
   }).sort(function(a,b){return (a.titre||"").localeCompare(b.titre||"","fr");});
-  if(!list.length){ $("clist").innerHTML='<div class="empty"><p>Aucun chant pour l’instant dans cette catégorie.</p><a class="btn primary" href="#contribuer" data-goseg="chant">Proposer un chant</a></div>'; return; }
+  if(!list.length){ $("clist").innerHTML='<div class="empty" style="grid-column:1/-1"><p>'+(D.chants.length?'Aucun chant pour l’instant dans cette catégorie.':'<strong>Aucun chant pour l’instant.</strong> Un slogan scandé, une chanson détournée ? Partagez le premier.')+'</p><a class="btn primary" href="#contribuer" data-goseg="chant">Proposer un chant</a></div>'; return; }
   $("clist").innerHTML=list.map(function(c){
     var lines=String(c.paroles||"").split("\n"), short=lines.slice(0,4).join("\n"), more=lines.length>4;
     var lien=safeUrl(c.lien), src=c.source&&safeUrl(c.source.url);
@@ -402,12 +410,18 @@ function fillFilterList(dataCities, apiList){
 }
 
 /* ---------- formulaires (Netlify Forms) ---------- */
-(function(){
+function fillManifSelects(){
+  var cur=$("pManif").value, ccur=$("cManif").value, mcur=$("mMouv").value;
   var sortedM=D.manifs.slice().sort(function(a,b){return (b.date||"").localeCompare(a.date||"");}), opts="", curY=null;
   sortedM.forEach(function(m){ var y=String(m.date||"").slice(0,4); if(y!==curY){ if(curY!==null) opts+='</optgroup>'; opts+='<optgroup label="'+esc(y)+'">'; curY=y; } opts+='<option value="'+esc(m.slug)+'">'+esc(m.hashtag+" · "+m.type)+'</option>'; });
   if(curY!==null) opts+='</optgroup>';
   $("mMouv").innerHTML='<option value="">Aucun, ou je ne sais pas</option>'+D.mouvements.map(function(mv){return '<option value="'+esc(mv.id)+'">'+esc(mv.nom)+'</option>';}).join("");
   $("pManif").innerHTML='<option value="">Je ne sais pas</option>'+opts+'<option value="autre">Une autre manif…</option>';
+  $("cManif").innerHTML='<option value="">Je ne sais pas, ou plusieurs</option>'+opts;
+  if(cur) $("pManif").value=cur; if(ccur) $("cManif").value=ccur; if(mcur) $("mMouv").value=mcur;
+}
+(function(){
+  fillManifSelects();
   var h="";
   ["registre","sujet","references","forme"].forEach(function(k){
     h+='<div class="field"><span class="lab">'+FACETS[k].label+'</span><div class="chips">'+FACETS[k].values.map(function(v){return '<button type="button" class="chip" data-pf="'+k+'" data-v="'+esc(v)+'" aria-pressed="false">'+esc(v)+'</button>';}).join("")+'</div>'+
@@ -420,7 +434,6 @@ function fillFilterList(dataCities, apiList){
 })();
 (function(){
   $("cTypeSel").innerHTML=CHANT_TYPES.map(function(t){return '<option>'+esc(t)+'</option>';}).join("");
-  $("cManif").innerHTML='<option value="">Je ne sais pas, ou plusieurs</option>'+$("pManif").innerHTML.replace('<option value="">Je ne sais pas</option>','').replace('<option value="autre">Une autre manif…</option>','');
   $("cFacets").innerHTML='<div class="field"><span class="lab">Sujet</span><div class="chips">'+FACETS.sujet.values.map(function(v){return '<button type="button" class="chip" data-cf="sujet" data-v="'+esc(v)+'" aria-pressed="false">'+esc(v)+'</button>';}).join("")+'</div><input type="text" class="autre-in" id="cpa-sujet" placeholder="Précisez « autre »" hidden></div>';
 })();
 $("cTypeSel").addEventListener("change",function(){ $("cTypeAutre").hidden=this.value!=="Autre"; });
@@ -545,5 +558,20 @@ $("form-signalement").addEventListener("submit",function(e){
 });
 
 /* ---------- démarrage ---------- */
-renderFilters(); renderGrid(); renderStats(); renderBig(true); renderStrip(); renderTactiques(); renderChants(); route();
+function renderEverything(){
+  renderFilters(); renderGrid(); renderStats(); renderBig(true); renderStrip(); renderTactiques(); renderChants(); fillManifSelects();
+  var h=(location.hash||"").replace("#","").split("/");
+  if(h[0]==="manifs"){ var m=h[1]?manif(decodeURIComponent(h[1])):null; if(m) renderManifDetail(m); else renderManifs(); }
+}
+renderEverything(); route();
+// Les contributions arrivent sur GitHub : on lit la version la plus récente, sans attendre une mise en ligne Netlify.
+if(location.protocol!=="file:"){
+  fetch(RAW+"data.json?v="+Math.floor(Date.now()/60000),{cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function(live){
+      ["mouvements","manifs","pancartes","tactiques","chants"].forEach(function(k){ D[k]=Array.isArray(live[k])?live[k]:[]; });
+      S.bigIdx=-1; renderEverything();
+    })
+    .catch(function(){ /* en cas d’échec, on garde la version publiée avec le site */ });
+}
 })();
