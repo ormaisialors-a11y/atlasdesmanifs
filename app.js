@@ -5,7 +5,7 @@
 var D = window.ATLAS || {}; ["mouvements","manifs","pancartes","tactiques","chants"].forEach(function(k){ if(!Array.isArray(D[k])) D[k]=[]; });
 var FACETS = {
   registre:{label:"Registre", values:["Revendication","Interpellation","Cri de colère","Jeu de mots","Humour","Détournement","Témoignage","Mème, culture web","Poésie","Solidarité","Méta","Autre"]},
-  sujet:{label:"Sujet", values:["Démocratie","Antifascisme","Antiracisme","Justice","Droits","Éducation","Jeunesse","Violences policières","Économie","Travail","Féminisme","LGBTQIA+","Écologie","Pouvoir d’achat","Inégalités et justice sociale","Numérique","Culture","Autre"]},
+  sujet:{label:"Sujet", values:["Démocratie","Antifascisme","Antiracisme","Anticapitalisme","Justice","Droits","Éducation","Jeunesse","Violences policières","Économie","Travail","Féminisme","LGBTQIA+","Écologie","Pouvoir d’achat","Inégalités et justice sociale","Numérique","Culture","Autre"]},
   references:{label:"Références", values:["Pop culture","Web","Musique","Histoire","Slogan historique","Littérature, arts","Phrase de personnalité politique","Autre"]},
   forme:{label:"Forme", values:["Dessin","Inscription","Impression","Symboles","Drapeau","Vêtements","Affiche","Autocollant","Tag","Costume","Objets détournés","Marionnettes","Instruments","Autre"]}
 };
