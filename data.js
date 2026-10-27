@@ -1374,5 +1374,6 @@ window.ATLAS = {
    "credit": "Paroles d’Eugène Pottier (1871), musique de Pierre De Geyter (1888). Domaine public.",
    "note": "Chant ouvrier repris dans les cortèges syndicaux depuis plus d’un siècle."
   }
- ]
+ ],
+ "ressources": []
 };
