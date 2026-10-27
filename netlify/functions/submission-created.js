@@ -1,7 +1,7 @@
 /*
   Atlas des manifs : traitement des contributions envoyées par le formulaire.
 
-  - Pancartes, chants et tactiques sont PUBLIÉS DIRECTEMENT (le site se met à jour
+  - Pancartes, chants, tactiques et ressources sont PUBLIÉS DIRECTEMENT (le site se met à jour
     en une à deux minutes). Vous pouvez les retirer ensuite en supprimant leur fichier.
   - Les nouvelles MANIFS passent par une « pull request » sur GitHub : elles
     n'apparaissent qu'après votre validation (Merge).
@@ -107,6 +107,20 @@ async function manifPour(date, type) {
   if (m.type === type) return { ids, nouvelle: false };
   ids = manifIds(date, type, true);
   return { ids, nouvelle: !(await readJsonFile(`contenu/manifs/${ids.slug}.json`, BRANCH)) };
+}
+
+// Récupère la photo envoyée avec le formulaire (déjà floutée dans le navigateur).
+async function photoFile(d, id) {
+  const ph = d.photo, phUrl = ph && (typeof ph === "string" ? ph : ph.url);
+  if (!phUrl) return null;
+  try {
+    const r = await fetch(phUrl);
+    if (!r.ok) return null;
+    const buf = Buffer.from(await r.arrayBuffer());
+    if (!buf.length) return null;
+    const ct = (r.headers.get("content-type") || "").toLowerCase();
+    return { path: `photos/${id}.${ct.includes("png") ? "png" : ct.includes("webp") ? "webp" : "jpg"}`, base64: buf.toString("base64") };
+  } catch (e) { console.log("Photo non récupérée : " + e.message); return null; }
 }
 
 // Règles anti-troll : renvoie la raison de la mise en attente, ou "" si publication directe.
@@ -230,11 +244,27 @@ exports.handler = async (event) => {
         credit: clean(d.credit, 200), ajoute: new Date().toISOString().slice(0, 10)
       };
       if (fam === "autre" && clean(d.famille_precision)) t.famillePrecision = clean(d.famille_precision, 80);
+      const ph = await photoFile(d, id);
+      if (ph) {
+        files.push(ph);
+        t.photo = { fichier: ph.path, credit: clean(d.credit, 200) };
+        if (clean(d.confirmation) !== "oui") extra = "photo envoyée sans la case de confirmation (floutage, droits)";
+      }
       files.push({ path: `contenu/tactiques/${id}.json`, base64: json(t) });
       label = `tactique « ${t.nom} »`;
       textes = [t.nom, t.description, t.credit, d.lieu, t.famillePrecision];
       titrePR = `Tactique : ${t.nom}`;
       corpsPR = `- Type : ${fam}${t.famillePrecision ? " (" + t.famillePrecision + ")" : ""}\n\n${t.description}`;
+    }
+    else if (form === "ressource") {
+      const id = `r-${stamp}-${rnd}`;
+      const cat = clean(d.categorie) === "Autre" && clean(d.categorie_precision) ? clean(d.categorie_precision, 80) : clean(d.categorie, 80) || "Autre";
+      const r = { id, nom: clean(d.nom, 200), lien: url(d.lien), categorie: cat, description: clean(d.description, 1500), credit: clean(d.credit, 200), contact: clean(d.contact_public, 200), ajoute: new Date().toISOString().slice(0, 10) };
+      files.push({ path: `contenu/ressources/${id}.json`, base64: json(r) });
+      label = `ressource « ${r.nom} »`;
+      textes = [r.nom, r.description, r.credit, r.contact, d.categorie_precision];
+      titrePR = `Ressource : ${r.nom}`;
+      corpsPR = `- Rubrique : ${cat}\n- Lien : ${r.lien || "aucun"}\n\n${r.description}`;
     }
     else {
       return { statusCode: 200 }; // signalements et autres formulaires : seulement dans Netlify Forms

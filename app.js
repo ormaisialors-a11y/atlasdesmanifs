@@ -5,13 +5,16 @@
 /* Où le site lit ses contenus en direct (dépôt GitHub public) */
 var SOURCE = { owner: "ormaisialors-a11y", repo: "atlasdesmanifs", branch: "main" };
 var RAW = "https://raw.githubusercontent.com/"+SOURCE.owner+"/"+SOURCE.repo+"/"+SOURCE.branch+"/";
-var D = window.ATLAS || {}; ["mouvements","manifs","pancartes","tactiques","chants"].forEach(function(k){ if(!Array.isArray(D[k])) D[k]=[]; });
+var D = window.ATLAS || {}; ["mouvements","manifs","pancartes","tactiques","chants","ressources"].forEach(function(k){ if(!Array.isArray(D[k])) D[k]=[]; });
 var FACETS = {
   registre:{label:"Registre", values:["Revendication","Interpellation","Cri de colère","Jeu de mots","Humour","Détournement","Témoignage","Mème, culture web","Poésie","Solidarité","Méta","Autre"]},
   sujet:{label:"Sujet", values:["Démocratie","Antifascisme","Antiracisme","Anticapitalisme","Justice","Droits","Éducation","Jeunesse","Violences policières","Économie","Travail","Féminisme","LGBTQIA+","Écologie","Pouvoir d’achat","Inégalités et justice sociale","Numérique","Culture","Autre"]},
   references:{label:"Références", values:["Pop culture","Web","Musique","Histoire","Slogan historique","Littérature, arts","Phrase de personnalité politique","Autre"]},
   forme:{label:"Forme", values:["Dessin","Inscription","Impression","Symboles","Drapeau","Vêtements","Affiche","Autocollant","Tag","Costume","Objets détournés","Marionnettes","Instruments","Autre"]}
 };
+/* Ressources de départ, toujours affichées (les ressources envoyées par le formulaire s’y ajoutent) */
+var RES_DEFAUT = [{"id": "r01", "nom": "La carte des stratégies de l’écologie", "lien": "https://bonpote.com/250-facons-dagir-pour-lecologie-la-carte-des-strategies/", "categorie": "Cartographies", "description": "Une carte réalisée par le média Fracas qui recense 16 objectifs, 52 stratégies et 250 tactiques de l’écologie, rangés en quatre grands pôles : faire contre, faire avec, faire autrement, faire sans. Un outil pour élargir ses modes d’action, préparer ou faire le bilan d’une mobilisation, avec une version poster téléchargeable.", "credit": "Fracas, publiée par Bon Pote"}, {"id": "r02", "nom": "Beautiful Trouble", "lien": "https://beautifultrouble.org", "categorie": "Boîtes à outils", "description": "Une boîte à outils collaborative de tactiques, principes et récits d’action créative.", "credit": ""}, {"id": "r03", "nom": "Tools for Action", "lien": "https://toolsforaction.net", "categorie": "Boîtes à outils", "description": "Objets gonflables et dispositifs pour l’action directe créative et non violente.", "credit": ""}, {"id": "r04", "nom": "Ligue des droits de l’Homme", "lien": "https://www.ldh-france.org", "categorie": "Droits et sécurité", "description": "Repères sur le droit de manifester et les observatoires des libertés.", "credit": ""}, {"id": "r05", "nom": "CNIL", "lien": "https://www.cnil.fr", "categorie": "Droits et sécurité", "description": "Le droit à l’image et la protection des données, notamment pour les mineur·es.", "credit": ""}, {"id": "r06", "nom": "Atlas des Régions Naturelles", "lien": "https://www.archive-arn.fr", "categorie": "Inspiration", "description": "L’archive photographique d’Éric Tabuchi et Nelly Monnier, qui a inspiré la logique de classement de ce site.", "credit": ""}, {"id": "r07", "nom": "Reportage photo du cortège lycéen du 13 octobre", "lien": "https://www.politis.fr/articles/2026/10/en-images-qui-nous-protege-de-la-police-dans-le-cortege-de-la-mobilisation-lyceenne-a-paris/", "categorie": "Lire sur les mouvements", "description": "Le cortège parisien du 13 octobre 2026, par Maxime Sirvins.", "credit": "Politis"}, {"id": "r08", "nom": "Les lycéens manifestent avec les codes du web", "lien": "https://www.sudradio.fr/societe/batailles-daura-bismillah-cest-les-tenebres-les-lyceens-manifestent-avec-les-codes-du-web", "categorie": "Lire sur les mouvements", "description": "Batailles d’aura, mèmes et humour dans les cortèges de l’automne 2026.", "credit": "AFP"}, {"id": "r09", "nom": "Dossier mobilisation lycéenne", "lien": "https://www.publicsenat.fr/dossier/mobilisation-lycenne", "categorie": "Lire sur les mouvements", "description": "Tous les articles de Public Sénat sur le mouvement lycéen.", "credit": "Public Sénat"}, {"id": "r10", "nom": "Dossier « 17 octobre : Macron récolte la colère »", "lien": "https://www.politis.fr/dossiers/17-octobre-macron-recolte-la-colere/", "categorie": "Lire sur les mouvements", "description": "Reportages sur la convergence des colères du 17 octobre 2026.", "credit": "Politis"}];
+var RES_CATS = ["Cartographies","Boîtes à outils","Guides pratiques","Droits et sécurité","Collectifs et organisations","Médias","Lire sur les mouvements","Films, vidéos et podcasts","Inspiration","Autre"];
 var CHANT_TYPES = ["Slogan scandé","Chanson détournée","Chanson originale","Chant traditionnel","Autre"];
 var TYPES = ["Manifestation nationale","Manifestation lycéenne","Manifestation syndicale","Grève","Blocus","Autre"];
 var FAMILLES = [
@@ -313,9 +316,38 @@ function renderTactiques(openId){
       return '<li>'+(m?'<a class="htag" href="#manifs/'+esc(m.slug)+'">'+esc(m.hashtag)+'</a> ':'')+esc(e.texte||"")+(u?' <a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(e.source||"Source")+'</a>':(e.source?" ("+esc(e.source)+")":""))+'</li>';
     }).join("");
     return '<details class="tact" id="tact-'+esc(t.id)+'" style="--fam:'+f.color+'"'+(openId===t.id?' open':'')+'><summary><span class="t-ic" style="color:'+f.color+'">'+picto(t.famille)+'</span><h3>'+esc(t.nom)+'</h3><span class="plus" aria-hidden="true">+</span><span class="fam">'+esc(f.label)+'</span></summary>'+
-      '<div class="tbody"><p>'+esc(t.description||"")+'</p>'+(ex?'<strong>Vu dans les mobilisations</strong><ul>'+ex+'</ul>':'')+
+      '<div class="tbody">'+(photoOf(t)?'<img class="tphoto" src="'+esc(photoOf(t))+'" alt="'+esc(t.nom)+'" loading="lazy">'+(t.photo.credit?'<p class="tcredit">Photo : '+esc(t.photo.credit)+'</p>':''):'')+'<p>'+esc(t.description||"")+'</p>'+(ex?'<strong>Vu dans les mobilisations</strong><ul>'+ex+'</ul>':'')+
       (t.credit?'<p><small>Crédit : '+esc(t.credit)+'</small></p>':'')+'<p><button type="button" class="signal" data-signal="tactique '+esc(t.id)+'" data-what="'+esc(t.nom)+'">Signaler cette tactique</button></p></div></details>';
   }).join("");
+}
+
+/* ---------- ressources ---------- */
+function contactHtml(c){
+  c=String(c||"").trim(); if(!c) return "";
+  var h=esc(c);
+  if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c)) h='<a href="mailto:'+esc(c)+'">'+esc(c)+'</a>';
+  else if(safeUrl(c)) h='<a href="'+esc(safeUrl(c))+'" target="_blank" rel="noopener">'+esc(c.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))+'</a>';
+  return '<span class="rcontact">Contact : '+h+'</span>';
+}
+function allRessources(){
+  var seen={}, out=[];
+  D.ressources.concat(RES_DEFAUT).forEach(function(r){ var k=(r.lien||r.nom||"").toLowerCase(); if(k&&!seen[k]){ seen[k]=1; out.push(r); } });
+  return out;
+}
+function renderRessources(){
+  var RS=allRessources();
+  var cats=RES_CATS.slice(); RS.forEach(function(r){ if(r.categorie && cats.indexOf(r.categorie)<0) cats.splice(cats.length-1,0,r.categorie); });
+  var h="";
+  cats.forEach(function(c){
+    var list=RS.filter(function(r){return (r.categorie||"Autre")===c;}).sort(function(a,b){return (a.nom||"").localeCompare(b.nom||"","fr");});
+    if(!list.length) return;
+    h+='<section><h2>'+esc(c)+'</h2><ul>'+list.map(function(r){
+      var u=safeUrl(r.lien);
+      return '<li>'+(u?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(r.nom)+'</a>':'<strong>'+esc(r.nom)+'</strong>')+
+        (r.description?'<span>'+esc(r.description)+'</span>':'')+(r.credit?'<span class="rcredit">'+esc(r.credit)+'</span>':'')+contactHtml(r.contact)+'</li>';
+    }).join("")+'</ul></section>';
+  });
+  $("resList").innerHTML=h||'<div class="empty" style="grid-column:1/-1"><p>Aucune ressource pour l’instant.</p></div>';
 }
 
 /* ---------- chants ---------- */
@@ -436,6 +468,8 @@ function fillManifSelects(){
   $("cTypeSel").innerHTML=CHANT_TYPES.map(function(t){return '<option>'+esc(t)+'</option>';}).join("");
   $("cFacets").innerHTML='<div class="field"><span class="lab">Sujet</span><div class="chips">'+FACETS.sujet.values.map(function(v){return '<button type="button" class="chip" data-cf="sujet" data-v="'+esc(v)+'" aria-pressed="false">'+esc(v)+'</button>';}).join("")+'</div><input type="text" class="autre-in" id="cpa-sujet" placeholder="Précisez « autre »" hidden></div>';
 })();
+$("rCat").innerHTML=RES_CATS.map(function(c){return '<option>'+esc(c)+'</option>';}).join("");
+$("rCat").addEventListener("change",function(){ $("rCatAutre").hidden=this.value!=="Autre"; });
 $("cTypeSel").addEventListener("change",function(){ $("cTypeAutre").hidden=this.value!=="Autre"; });
 $("cFacets").addEventListener("click",function(e){
   var c=e.target.closest(".chip"); if(!c) return;
@@ -468,49 +502,59 @@ Array.prototype.forEach.call(document.querySelectorAll("[data-seg]"),function(b)
   b.addEventListener("click",function(){
     var w=b.getAttribute("data-seg");
     Array.prototype.forEach.call(document.querySelectorAll("[data-seg]"),function(x){ x.setAttribute("aria-pressed", x===b); });
-    ["pancarte","manif","tactique","chant","contact"].forEach(function(f){ $("form-"+f).hidden=(f!==w); });
+    ["pancarte","manif","tactique","chant","ressource","contact"].forEach(function(f){ $("form-"+f).hidden=(f!==w); });
     $("formMsg").innerHTML="";
   });
 });
 function formMsg(ok,txt){ $("formMsg").innerHTML='<div class="msg '+(ok?"ok":"err")+'" role="status">'+esc(txt)+'</div>'; $("formMsg").scrollIntoView({block:"center"}); }
 
-/* floutage */
-var cv=$("pCanvas"), ctx=cv.getContext("2d"), hist=[], drag=null, hasPhoto=false;
-$("pFile").addEventListener("change",function(){
-  var f=this.files&&this.files[0]; if(!f) return;
-  var img=new Image(), url=URL.createObjectURL(f);
-  img.onload=function(){
-    var max=1600, w=img.naturalWidth, h=img.naturalHeight, r=Math.min(1,max/Math.max(w,h));
-    cv.width=Math.round(w*r); cv.height=Math.round(h*r);
-    ctx.drawImage(img,0,0,cv.width,cv.height); URL.revokeObjectURL(url);
-    hist=[]; hasPhoto=true; cv.hidden=false; $("blurTools").hidden=false;
-  };
-  img.src=url;
-});
-function pt(e){ var r=cv.getBoundingClientRect(); return {x:(e.clientX-r.left)*cv.width/r.width, y:(e.clientY-r.top)*cv.height/r.height}; }
-cv.addEventListener("pointerdown",function(e){ drag={a:pt(e),snap:ctx.getImageData(0,0,cv.width,cv.height)}; cv.setPointerCapture(e.pointerId); });
-cv.addEventListener("pointermove",function(e){
-  if(!drag) return; var b=pt(e);
-  ctx.putImageData(drag.snap,0,0);
-  ctx.save(); ctx.strokeStyle="#F6E43F"; ctx.lineWidth=Math.max(3,cv.width/300); ctx.strokeRect(drag.a.x,drag.a.y,b.x-drag.a.x,b.y-drag.a.y); ctx.restore();
-});
-cv.addEventListener("pointerup",function(e){
-  if(!drag) return; var b=pt(e), a=drag.a; ctx.putImageData(drag.snap,0,0);
-  var x=Math.max(0,Math.min(a.x,b.x))|0, y=Math.max(0,Math.min(a.y,b.y))|0, w=Math.abs(b.x-a.x)|0, h=Math.abs(b.y-a.y)|0;
-  if(w>6&&h>6){ hist.push(drag.snap); pixelate(x,y,Math.min(w,cv.width-x),Math.min(h,cv.height-y)); }
-  drag=null;
-});
-function pixelate(x,y,w,h){
-  var bs=Math.max(10,Math.round(Math.max(w,h)/10));
-  for(var yy=y; yy<y+h; yy+=bs) for(var xx=x; xx<x+w; xx+=bs){
-    var bw=Math.min(bs,x+w-xx), bh=Math.min(bs,y+h-yy), d=ctx.getImageData(xx,yy,bw,bh).data, r=0,g=0,bl=0,n=d.length/4;
-    for(var i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];bl+=d[i+2];}
-    ctx.fillStyle="rgb("+(r/n|0)+","+(g/n|0)+","+(bl/n|0)+")"; ctx.fillRect(xx,yy,bw,bh);
+/* floutage (réutilisable : pancartes et tactiques) */
+function makeBlur(ids){
+  var cv=$(ids.canvas), ctx=cv.getContext("2d"), hist=[], drag=null, has=false;
+  $(ids.file).addEventListener("change",function(){
+    var f=this.files&&this.files[0]; if(!f) return;
+    var img=new Image(), url=URL.createObjectURL(f);
+    img.onload=function(){
+      var max=1600, w=img.naturalWidth, h=img.naturalHeight, r=Math.min(1,max/Math.max(w,h));
+      cv.width=Math.round(w*r); cv.height=Math.round(h*r);
+      ctx.drawImage(img,0,0,cv.width,cv.height); URL.revokeObjectURL(url);
+      hist=[]; has=true; cv.hidden=false; $(ids.tools).hidden=false;
+    };
+    img.src=url;
+  });
+  function pt(e){ var r=cv.getBoundingClientRect(); return {x:(e.clientX-r.left)*cv.width/r.width, y:(e.clientY-r.top)*cv.height/r.height}; }
+  cv.addEventListener("pointerdown",function(e){ drag={a:pt(e),snap:ctx.getImageData(0,0,cv.width,cv.height)}; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener("pointermove",function(e){
+    if(!drag) return; var b=pt(e);
+    ctx.putImageData(drag.snap,0,0);
+    ctx.save(); ctx.strokeStyle="#F6E43F"; ctx.lineWidth=Math.max(3,cv.width/300); ctx.strokeRect(drag.a.x,drag.a.y,b.x-drag.a.x,b.y-drag.a.y); ctx.restore();
+  });
+  cv.addEventListener("pointerup",function(e){
+    if(!drag) return; var b=pt(e), a=drag.a; ctx.putImageData(drag.snap,0,0);
+    var x=Math.max(0,Math.min(a.x,b.x))|0, y=Math.max(0,Math.min(a.y,b.y))|0, w=Math.abs(b.x-a.x)|0, h=Math.abs(b.y-a.y)|0;
+    if(w>6&&h>6){ hist.push(drag.snap); pixelate(x,y,Math.min(w,cv.width-x),Math.min(h,cv.height-y)); }
+    drag=null;
+  });
+  function pixelate(x,y,w,h){
+    var bs=Math.max(10,Math.round(Math.max(w,h)/10));
+    for(var yy=y; yy<y+h; yy+=bs) for(var xx=x; xx<x+w; xx+=bs){
+      var bw=Math.min(bs,x+w-xx), bh=Math.min(bs,y+h-yy), d=ctx.getImageData(xx,yy,bw,bh).data, r=0,g=0,bl=0,n=d.length/4;
+      for(var i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];bl+=d[i+2];}
+      ctx.fillStyle="rgb("+(r/n|0)+","+(g/n|0)+","+(bl/n|0)+")"; ctx.fillRect(xx,yy,bw,bh);
+    }
   }
+  function clear(){ has=false; hist=[]; cv.hidden=true; $(ids.tools).hidden=true; $(ids.file).value=""; }
+  $(ids.undo).addEventListener("click",function(){ var st=hist.pop(); if(st) ctx.putImageData(st,0,0); });
+  $(ids.remove).addEventListener("click",function(){ clear(); $(ids.file).click(); });
+  return {
+    has:function(){ return has; },
+    clear:clear,
+    attach:function(name){ return new Promise(function(res){ if(!has){ res(null); return; } cv.toBlob(function(b){ res(function(fd){ fd.delete("photo"); if(b) fd.append("photo", b, name); }); },"image/jpeg",0.85); }); }
+  };
 }
-$("undoBlur").addEventListener("click",function(){ var s=hist.pop(); if(s) ctx.putImageData(s,0,0); });
-$("removePhoto").addEventListener("click",function(){ hasPhoto=false; hist=[]; cv.hidden=true; $("blurTools").hidden=true; $("pFile").value=""; $("pFile").click(); });
-function clearPhoto(){ hasPhoto=false; hist=[]; cv.hidden=true; $("blurTools").hidden=true; $("pFile").value=""; }
+var pBlur=makeBlur({file:"pFile",canvas:"pCanvas",tools:"blurTools",undo:"undoBlur",remove:"removePhoto"});
+var tBlur=makeBlur({file:"tFile",canvas:"tCanvas",tools:"tBlurTools",undo:"tUndoBlur",remove:"tRemovePhoto"});
+function clearPhoto(){ pBlur.clear(); }
 
 function send(form, extra){
   var fd=new FormData(form);
@@ -528,25 +572,35 @@ function handle(form, check, okText, extra){
       formMsg(true,okText); form.reset();
       if(form.id==="form-pancarte"){ $("pAutre").hidden=true; Array.prototype.forEach.call(document.querySelectorAll('[data-pf][aria-pressed="true"]'),function(c){c.setAttribute("aria-pressed","false");}); ["registre","sujet","references","forme"].forEach(function(k){$("h-"+k).value=""; $("ha-"+k).value=""; $("pa-"+k).value=""; $("pa-"+k).hidden=true;}); clearPhoto(); }
       if(form.id==="form-manif") $("mTypeAutre").hidden=true;
-      if(form.id==="form-tactique") $("tFamAutre").hidden=true;
+      if(form.id==="form-tactique"){ $("tFamAutre").hidden=true; tBlur.clear(); }
+      if(form.id==="form-ressource") $("rCatAutre").hidden=true;
       if(form.id==="form-chant"){ $("cTypeAutre").hidden=true; $("cpa-sujet").hidden=true; $("hc-sujet").value=""; $("hca-sujet").value=""; Array.prototype.forEach.call(document.querySelectorAll('[data-cf][aria-pressed="true"]'),function(c){c.setAttribute("aria-pressed","false");}); }
     }).catch(function(){ formMsg(false,"L’envoi a échoué. Vérifiez votre connexion et réessayez."); })
       .then(function(){ btn.disabled=false; btn.textContent=label; });
   });
 }
 handle($("form-pancarte"), function(){
-  if(!hasPhoto) return "Ajoutez la photo de la pancarte : c’est le cœur de l’atlas.";
+  if(!pBlur.has()) return "Ajoutez la photo de la pancarte : c’est le cœur de l’atlas.";
   if(!$("pTexte").value.trim()) return "Recopiez le texte de la pancarte avant d’envoyer.";
   if(!$("pCredit").value.trim()) return "Indiquez qui a pris la photo, pour pouvoir la créditer.";
   if(!$("pOk").checked) return "Cochez la case de confirmation : les visages doivent être floutés ou hors cadre.";
   return "";
 }, "Merci ! Votre pancarte sera en ligne dans quelques minutes.", function(){
-  return new Promise(function(res){ cv.toBlob(function(b){ res(function(fd){ fd.delete("photo"); if(b) fd.append("photo", b, "pancarte.jpg"); }); },"image/jpeg",0.85); });
+  return pBlur.attach("pancarte.jpg");
 });
 handle($("form-manif"), function(){ return !$("mDate").value?"Indiquez au moins la date de la manif.":""; }, "Merci ! La manif est envoyée. Sa page sera créée après relecture.");
 handle($("form-contact"), function(){ return !$("ctMessage").value.trim()?"Écrivez votre message avant d’envoyer.":""; }, "Merci, votre message est bien arrivé. Nous vous répondrons si vous avez laissé votre e-mail.");
 handle($("form-chant"), function(){ return (!$("cTitre").value.trim()||!$("cParoles").value.trim())?"Donnez au moins un titre et les paroles du chant.":""; }, "Merci ! Votre chant sera en ligne dans quelques minutes.");
-handle($("form-tactique"), function(){ return (!$("tNom").value.trim()||!$("tDesc").value.trim())?"Donnez au moins un nom et une description à la tactique.":""; }, "Merci ! Votre tactique sera en ligne dans quelques minutes.");
+handle($("form-tactique"), function(){
+  if(!$("tNom").value.trim()||!$("tDesc").value.trim()) return "Donnez au moins un nom et une description à la tactique.";
+  if(tBlur.has() && !$("tOk").checked) return "Cochez la case de confirmation : les visages doivent être floutés ou hors cadre.";
+  return "";
+}, "Merci ! Votre tactique sera en ligne dans quelques minutes.", function(){ return tBlur.attach("tactique.jpg"); });
+handle($("form-ressource"), function(){
+  if(!$("rNom").value.trim()) return "Donnez le nom de la ressource.";
+  var l=$("rLien").value.trim(); if(l && !/^https?:\/\//i.test(l)) return "Le lien doit commencer par https://";
+  return "";
+}, "Merci ! La ressource sera en ligne dans quelques minutes.");
 
 $("sigClose").addEventListener("click",function(){ $("dlgSignal").close(); });
 $("form-signalement").addEventListener("submit",function(e){
@@ -559,7 +613,7 @@ $("form-signalement").addEventListener("submit",function(e){
 
 /* ---------- démarrage ---------- */
 function renderEverything(){
-  renderFilters(); renderGrid(); renderStats(); renderBig(true); renderStrip(); renderTactiques(); renderChants(); fillManifSelects();
+  renderFilters(); renderGrid(); renderStats(); renderBig(true); renderStrip(); renderTactiques(); renderChants(); renderRessources(); fillManifSelects();
   var h=(location.hash||"").replace("#","").split("/");
   if(h[0]==="manifs"){ var m=h[1]?manif(decodeURIComponent(h[1])):null; if(m) renderManifDetail(m); else renderManifs(); }
 }
@@ -569,7 +623,7 @@ if(location.protocol!=="file:"){
   fetch(RAW+"data.json?v="+Math.floor(Date.now()/60000),{cache:"no-store"})
     .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
     .then(function(live){
-      ["mouvements","manifs","pancartes","tactiques","chants"].forEach(function(k){ D[k]=Array.isArray(live[k])?live[k]:[]; });
+      ["mouvements","manifs","pancartes","tactiques","chants","ressources"].forEach(function(k){ D[k]=Array.isArray(live[k])?live[k]:[]; });
       S.bigIdx=-1; renderEverything();
     })
     .catch(function(){ /* en cas d’échec, on garde la version publiée avec le site */ });

@@ -358,6 +358,10 @@ input.sel{padding:9px 10px}
 /* textes des pancartes : typo du logo */
 .dlg-caption{color:var(--ink);font-size:clamp(24px,3.4vw,32px);line-height:1.15;letter-spacing:-.01em}
 .mhead .bigtag{letter-spacing:-.02em}
+.tact .tphoto{width:100%;max-width:560px;border-radius:8px;display:block;margin:4px 0 4px;border:1.5px solid var(--ink)}
+.tact .tcredit{font-size:14px;color:var(--ink-soft);margin:2px 0 12px}
+.res li .rcredit{font-size:14px;font-style:italic}
+.res li .rcontact{font-size:14px}
 </style>
 </head>
 <body>
@@ -494,6 +498,7 @@ input.sel{padding:9px 10px}
       <button type="button" data-seg="manif" aria-pressed="false">Une manif</button>
       <button type="button" data-seg="tactique" aria-pressed="false">Une tactique</button>
       <button type="button" data-seg="chant" aria-pressed="false">Un chant</button>
+      <button type="button" data-seg="ressource" aria-pressed="false">Une ressource</button>
       <button type="button" data-seg="contact" aria-pressed="false">Nous écrire</button>
     </div>
     <div id="formMsg"></div>
@@ -579,9 +584,40 @@ input.sel{padding:9px 10px}
         <div class="field"><label for="tLien">Lien</label><input id="tLien" name="lien" type="url" placeholder="https://"></div>
       </div>
       <div class="field"><label for="tCredit">À créditer</label><input id="tCredit" name="credit" type="text" placeholder="Collectif, personne, média"></div>
+      <div class="field">
+        <span class="lab">Photo (facultatif)</span>
+        <div class="blurbox">
+          <div class="hint">Une photo de la tactique en action. Tracez un rectangle sur chaque visage pour le flouter : seule la version floutée est envoyée.</div>
+          <input id="tFile" type="file" accept="image/*" aria-label="Choisir une photo">
+          <input name="photo" type="file" hidden>
+          <canvas id="tCanvas" hidden></canvas>
+          <div class="blurtools" id="tBlurTools" hidden>
+            <button class="btn small" type="button" id="tUndoBlur">Annuler le dernier flou</button>
+            <button class="btn small" type="button" id="tRemovePhoto">Changer de photo</button>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" id="tOk" name="confirmation" value="oui"> Si j’envoie une photo, je confirme que les visages sont floutés ou hors cadre, et que j’ai le droit de la partager.</label>
+      </div>
       <div class="field"><label for="tContact">Votre contact (facultatif, jamais publié)</label><input id="tContact" name="contact" type="text"></div>
       <button class="btn primary" type="submit">Envoyer la tactique</button>
     </form>
+    <form name="ressource" id="form-ressource" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate hidden>
+      <input type="hidden" name="form-name" value="ressource">
+      <p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
+      <p class="hint" style="margin:0 0 18px">Une carte, un guide, une boîte à outils, un article de fond : ce qui aide à s’informer, s’organiser ou s’inspirer.</p>
+      <div class="field"><label for="rNom">Nom de la ressource *</label><input id="rNom" name="nom" type="text" placeholder="Ex. La carte des stratégies de l’écologie"></div>
+      <div class="field"><label for="rLien">Lien</label><input id="rLien" name="lien" type="url" placeholder="https://"></div>
+      <div class="field"><label for="rCat">Type de ressource</label><select id="rCat" name="categorie"></select><input id="rCatAutre" name="categorie_precision" type="text" placeholder="Précisez" hidden style="margin-top:8px"></div>
+      <div class="field"><label for="rDesc">Description</label><div class="hint">En une ou deux phrases : ce que c’est, à quoi ça sert.</div><textarea id="rDesc" name="description"></textarea></div>
+      <div class="row2">
+        <div class="field"><label for="rCredit">Réalisé par</label><input id="rCredit" name="credit" type="text" placeholder="Collectif, média, auteur·ice"></div>
+        <div class="field"><label for="rContactPub">Contact de la ressource</label><input id="rContactPub" name="contact_public" type="text" placeholder="E-mail, site ou réseau"></div>
+      </div>
+      <div class="hint" style="margin:-8px 0 18px;font-size:14.5px;color:var(--ink-soft)">Le contact de la ressource est affiché sur le site. Tous les champs sauf le nom sont facultatifs.</div>
+      <div class="field"><label for="rContact">Votre contact à vous (facultatif, jamais publié)</label><input id="rContact" name="contact" type="text"></div>
+      <button class="btn primary" type="submit">Envoyer la ressource</button>
+    </form>
+
     <form name="contact" id="form-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate hidden>
       <input type="hidden" name="form-name" value="contact">
       <p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
@@ -640,39 +676,10 @@ input.sel{padding:9px 10px}
   <div class="wrap">
     <div class="pagehead">
       <h1>Ressources</h1>
-      <p>Boîtes à outils, droits, inspirations et lectures sur les mouvements.</p>
+      <p>Cartes, boîtes à outils, droits, inspirations et lectures sur les mouvements.</p>
     </div>
-    <div class="res">
-      <section>
-        <h2>Boîtes à outils</h2>
-        <ul>
-          <li><a href="https://beautifultrouble.org" target="_blank" rel="noopener">Beautiful Trouble</a><span>Une boîte à outils collaborative de tactiques, principes et récits d’action créative.</span></li>
-          <li><a href="https://toolsforaction.net" target="_blank" rel="noopener">Tools for Action</a><span>Objets gonflables et dispositifs pour l’action directe créative et non violente.</span></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Droits et sécurité</h2>
-        <ul>
-          <li><a href="https://www.ldh-france.org" target="_blank" rel="noopener">Ligue des droits de l’Homme</a><span>Repères sur le droit de manifester et les observatoires des libertés.</span></li>
-          <li><a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a><span>Le droit à l’image et la protection des données, notamment pour les mineur·es.</span></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Inspiration</h2>
-        <ul>
-          <li><a href="https://www.archive-arn.fr" target="_blank" rel="noopener">Atlas des Régions Naturelles</a><span>L’archive photographique d’Éric Tabuchi et Nelly Monnier, qui a inspiré la logique de classement de ce site.</span></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Lire sur l’automne 2026</h2>
-        <ul>
-          <li><a href="https://www.politis.fr/articles/2026/10/en-images-qui-nous-protege-de-la-police-dans-le-cortege-de-la-mobilisation-lyceenne-a-paris/" target="_blank" rel="noopener">Politis, reportage photo de l’acte V</a><span>Le cortège parisien du 13 octobre, par Maxime Sirvins.</span></li>
-          <li><a href="https://www.sudradio.fr/societe/batailles-daura-bismillah-cest-les-tenebres-les-lyceens-manifestent-avec-les-codes-du-web" target="_blank" rel="noopener">AFP, les lycéens manifestent avec les codes du web</a><span>Batailles d’aura, mèmes et humour dans les cortèges.</span></li>
-          <li><a href="https://www.publicsenat.fr/dossier/mobilisation-lycenne" target="_blank" rel="noopener">Public Sénat, dossier mobilisation lycéenne</a><span>Tous les articles sur le mouvement.</span></li>
-          <li><a href="https://www.politis.fr/dossiers/17-octobre-macron-recolte-la-colere/" target="_blank" rel="noopener">Politis, dossier du 17 octobre</a><span>Reportages sur la convergence des colères.</span></li>
-        </ul>
-      </section>
-    </div>
+    <div class="res" id="resList"></div>
+    <p style="margin-top:30px"><a class="btn primary" href="#contribuer" data-goseg="ressource">Proposer une ressource</a></p>
   </div>
 </section>
 </main>

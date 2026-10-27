@@ -8,6 +8,7 @@
 | `contenu/manifs/` | **Un fichier par manif** (sa page, son hashtag, son contexte) |
 | `contenu/tactiques/` | **Un fichier par tactique** |
 | `contenu/chants/` | **Un fichier par chant** (paroles, lien d’écoute) |
+| `contenu/ressources/` | **Un fichier par ressource** de la page Ressources (nom, lien, rubrique, description) |
 | `contenu/mouvements/` | Un fichier par mouvement (cycle de mobilisation) |
 | `photos/` | Les photos des pancartes |
 | `index.html` | La page, ses textes et son design |
@@ -197,6 +198,24 @@ Types de tactiques (`famille`) : `detournement`, `canular`, `costumes`, `musique
 - `paroles` : `\n` marque un retour à la ligne.
 - `lien` : facultatif, pour écouter (YouTube, Spotify, Deezer…).
 - **Droit d’auteur** : les chants scandés collectifs et les chansons du domaine public peuvent être recopiés en entier. Pour une chanson protégée, gardez seulement un court extrait des paroles et mettez le lien d’écoute.
+
+### Une ressource (`contenu/ressources/r11.json`)
+
+```json
+{
+  "id": "r11",
+  "nom": "Nom de la ressource",
+  "lien": "https://...",
+  "categorie": "Cartographies",
+  "description": "Ce que c’est, à quoi ça sert.",
+  "credit": "Collectif ou média",
+  "contact": "contact@exemple.org"
+}
+```
+
+Types : Cartographies, Boîtes à outils, Guides pratiques, Droits et sécurité, Collectifs et organisations, Médias, Lire sur les mouvements, Films, vidéos et podcasts, Inspiration, Autre (liste `RES_CATS` dans `app.js`). Seul `nom` est obligatoire. Le plus simple reste le formulaire **Contribuer > Une ressource**.
+
+**Photo d’une tactique** : ajoutez dans sa fiche `"photo": { "fichier": "photos/nom.jpg", "credit": "@pseudo" }`, après avoir déposé l’image dans `photos/`. Le formulaire **Une tactique** le fait automatiquement.
 
 ## 5. Modifier les critères, les onglets et les textes
 

@@ -9,7 +9,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const dossiers = ["mouvements", "manifs", "pancartes", "tactiques", "chants"];
+const dossiers = ["mouvements", "manifs", "pancartes", "tactiques", "chants", "ressources"];
 const ATLAS = {};
 const erreurs = [];
 
@@ -39,4 +39,4 @@ fs.writeFileSync(
   "/* Fichier fabriqué automatiquement par build.js à partir du dossier contenu/. Ne pas modifier à la main. */\n" +
   "window.ATLAS = " + JSON.stringify(ATLAS, null, 1) + ";\n"
 );
-console.log(`Atlas assemblé : ${ATLAS.pancartes.length} pancartes, ${ATLAS.manifs.length} manifs, ${ATLAS.tactiques.length} tactiques, ${ATLAS.chants.length} chants.`);
+console.log(`Atlas assemblé : ${ATLAS.pancartes.length} pancartes, ${ATLAS.manifs.length} manifs, ${ATLAS.tactiques.length} tactiques, ${ATLAS.chants.length} chants, ${ATLAS.ressources.length} ressources.`);
