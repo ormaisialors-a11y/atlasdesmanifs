@@ -1120,6 +1120,31 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-27",
    "departement": "75"
+  },
+  {
+   "id": "p-202610270830-yife",
+   "texte": "Bienvenue en lacrymocratie",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Sierra_whisky",
+    "fichier": "photos/p-202610270830-yife.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-10-27",
+   "departement": "75"
   }
  ],
  "tactiques": [
