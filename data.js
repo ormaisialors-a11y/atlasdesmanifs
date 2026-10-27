@@ -1209,6 +1209,32 @@ window.ATLAS = {
    "note": "Mots repris du film \" portrait d'une jeune fille en feu\"",
    "ajoute": "2026-10-27",
    "departement": "75"
+  },
+  {
+   "id": "p-202610271738-1s4v",
+   "texte": "L'abus de pouvoir tue \r\nQui voulez-vous fumer ? \r\nMal-bourreau\r\n100 CRS",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Revendication",
+    "Interpellation",
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Inégalités et justice sociale"
+   ],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Lolobisco",
+    "fichier": "photos/p-202610271738-1s4v.jpg"
+   },
+   "source": {},
+   "note": "Jeu de mots sur les paquets de cigarettes",
+   "ajoute": "2026-10-27",
+   "departement": "75"
   }
  ],
  "tactiques": [
