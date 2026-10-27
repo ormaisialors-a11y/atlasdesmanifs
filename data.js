@@ -1188,6 +1188,25 @@ window.ATLAS = {
    "ajoute": "2026-10-27"
   },
   {
+   "id": "t-202610271517-nqdg",
+   "nom": "FFFFF - Féedération des Fées Féevolutionnnaires du Futur,",
+   "famille": "costumes",
+   "description": "La Féedération des Fées Féevolutionnnaires du Futur (FFFFF), est une intersyndicale de fées venues du futur pour nous montrer comment nous organiser 🧚🏻🪄Parce qu'à cause de Macron,  on croit plus en la magie qu'en la démocratie.",
+   "exemples": [
+    {
+     "texte": "Marseille",
+     "source": "Lien",
+     "url": "https://www.instagram.com/feederation.francaise.des.fees/"
+    }
+   ],
+   "credit": "Fédération Française",
+   "ajoute": "2026-10-27",
+   "photo": {
+    "fichier": "photos/t-202610271517-nqdg.jpg",
+    "credit": "Fédération Française"
+   }
+  },
+  {
    "id": "t01",
    "nom": "Bataille d’aura",
    "famille": "danse",
