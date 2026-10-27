@@ -1145,6 +1145,30 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-27",
    "departement": "75"
+  },
+  {
+   "id": "p-202610271152-dc4d",
+   "texte": "Miladiou c'est le crépuscule",
+   "ville": "Toulouse",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Slogan historique"
+   ],
+   "auteur": "Pony",
+   "photo": {
+    "credit": "Pony",
+    "fichier": "photos/p-202610271152-dc4d.jpg"
+   },
+   "source": {},
+   "note": "Bismillah c'est les ténèbres",
+   "ajoute": "2026-10-27"
   }
  ],
  "tactiques": [
