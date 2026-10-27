@@ -165,8 +165,1004 @@ window.ATLAS = {
    ]
   }
  ],
- "pancartes": [],
+ "pancartes": [
+  {
+   "id": "p-202610262201-9irm",
+   "texte": "Contre les idées qui puent, parfum de lutte",
+   "ville": "Paris",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [
+    "Culture"
+   ],
+   "forme": [
+    "Objets détournés"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Konbini",
+    "fichier": "photos/p-202610262201-9irm.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262213-3xei",
+   "texte": "Fascismomètre",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Antifascisme",
+    "Antiracisme",
+    "Justice",
+    "Droits"
+   ],
+   "forme": [
+    "Affiche"
+   ],
+   "references": [
+    "Outils"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Baptiste_jri (pour Konbini)",
+    "fichier": "photos/p-202610262213-3xei.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De6VhLADUrS/?img_index=4"
+   },
+   "note": "",
+   "ajoute": "2026-10-26"
+  },
+  {
+   "id": "p-202610262215-dles",
+   "texte": "Slogan autorisé par la police",
+   "ville": "",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Humour"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Impression"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Manon Aubry",
+    "fichier": "photos/p-202610262215-dles.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4eDezjXRg/?img_index=1"
+   },
+   "note": "",
+   "ajoute": "2026-10-26"
+  },
+  {
+   "id": "p-202610262217-8sg6",
+   "texte": "Tu aimes mes CRS ? Le Mépris, un drame réalisé par Emmanuel Macron",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Revendication",
+    "Humour"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Yaelle777",
+    "fichier": "photos/p-202610262217-8sg6.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4TY3uDbmV/?img_index=2"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262218-cco3",
+   "texte": "Méprisée. Agressée. Mutilée.",
+   "ville": "Paris",
+   "manif": "",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Histoire"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "BonPote",
+    "fichier": "photos/p-202610262218-cco3.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4aZKJigRu/?img_index=14"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262223-k7xd",
+   "texte": "Regarde ta Rolex, c’est l’heure de la révolte",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Justice"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Marque"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Manon Aubry",
+    "fichier": "photos/p-202610262223-k7xd.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4eDezjXRg/?img_index=1"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262226-iwc5",
+   "texte": "Fleur bouquet : Bismillah",
+   "ville": "Lyon",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Poésie"
+   ],
+   "sujet": [
+    "Antiracisme",
+    "Jeunesse"
+   ],
+   "forme": [
+    "Oeuvre d'art"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "selimghommidh",
+    "fichier": "photos/p-202610262226-iwc5.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DemYfvUDanU/?img_index=15"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "69"
+  },
+  {
+   "id": "p-202610262228-7lrq",
+   "texte": "Il fait sombre au pays des ténèbres",
+   "ville": "Lyon",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Jeu de mots",
+    "Poésie"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Justice",
+    "Droits"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Pop culture",
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "selimghommidh",
+    "fichier": "photos/p-202610262228-7lrq.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DemYfvUDanU/?img_index=9"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "69"
+  },
+  {
+   "id": "p-202610262229-5gdp",
+   "texte": "Bismilou c'est les ténèbres",
+   "ville": "Lyon",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Jeunesse"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "selimghommidh",
+    "fichier": "photos/p-202610262229-5gdp.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DemYfvUDanU/?img_index=1"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "69"
+  },
+  {
+   "id": "p-202610262231-udcz",
+   "texte": "Ma famille m'a embrassé comme si je partais au front... Nous ne céderons pas à la terreur.",
+   "ville": "Toulouse",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Justice"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Histoire",
+    "Autre"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Charliemontagnemas",
+    "fichier": "photos/p-202610262231-udcz.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4rYTNiC94/?img_index=9"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "31"
+  },
+  {
+   "id": "p-202610262232-ivui",
+   "texte": "Malbarré Police Tue",
+   "ville": "Toulouse",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Objet"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Charliemontagnemas",
+    "fichier": "photos/p-202610262232-ivui.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4rYTNiC94/?img_index=15"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "31"
+  },
+  {
+   "id": "p-202610262235-6xj4",
+   "texte": "Le village se réveille. Un lycéen a perdu sa main.",
+   "ville": "Paris",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Cri de colère",
+    "Jeu de mots",
+    "Humour"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Pop culture",
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Baptiste_jri pour Konbini",
+    "fichier": "photos/p-202610262235-6xj4.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/Dee-5YtjTwG/?img_index=2"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262238-z8p3",
+   "texte": "Attention ! Ne fais pas blocus dans ton lycée de banlieue, tu risques de te faire très mal.",
+   "ville": "",
+   "manif": "6-octobre-2026",
+   "registre": [
+    "Jeu de mots",
+    "Humour"
+   ],
+   "sujet": [
+    "Antiracisme",
+    "Droits",
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "cabochard.e",
+    "fichier": "photos/p-202610262238-z8p3.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DeWki4zjjLN/?img_index=15"
+   },
+   "note": "",
+   "ajoute": "2026-10-26"
+  },
+  {
+   "id": "p-202610262239-b5m1",
+   "texte": "Génération 67 fait mai 68",
+   "ville": "Paris",
+   "manif": "6-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Jeunesse"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Histoire",
+    "Slogan historique"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "cabochard.e",
+    "fichier": "photos/p-202610262239-b5m1.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DeWki4zjjLN/?img_index=9"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262241-xmr5",
+   "texte": "Aucune bravoure de la BRAV-M",
+   "ville": "Paris",
+   "manif": "6-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Autre"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "cabochard.e",
+    "fichier": "photos/p-202610262241-xmr5.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DeWki4zjjLN/?img_index=5"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262242-0vqt",
+   "texte": "Marre des métiers passion aux salaires passoires",
+   "ville": "Paris",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Travail"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "cgt_confederation",
+    "fichier": "photos/p-202610262242-0vqt.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DecStjkDFN0/?img_index=2"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262244-anuh",
+   "texte": "Le maintient de l'ordre a besoin d'un rappel à l'ordre",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Mème, culture web"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Climax_fanzine",
+    "fichier": "photos/p-202610262244-anuh.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4gejHkcFX/?img_index=2"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262246-0eh6",
+   "texte": "Siamiaou tutti antifascisti",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Antifascisme"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Slogan historique"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Danieleobono",
+    "fichier": "photos/p-202610262246-0eh6.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DemkdevjqBX/?img_index=16"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262247-4r2q",
+   "texte": "Les gens d'âge moyen emmerdent aussi le Front National",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Antifascisme"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Slogan historique"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Danieleobono",
+    "fichier": "photos/p-202610262247-4r2q.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DemkdevjqBX/?img_index=6"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262248-65ou",
+   "texte": "Toujours s'aider, jamais céder",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Justice"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Autre"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Danieleobono",
+    "fichier": "photos/p-202610262248-65ou.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DemkdevjqBX/?img_index=3"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262248-c9h7",
+   "texte": "All Cops Are Bismillah c'est les ténèbres",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Humour"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Danieleobono",
+    "fichier": "photos/p-202610262248-c9h7.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DemkdevjqBX/?img_index=1"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262254-pfal",
+   "texte": "Acablons-les",
+   "ville": "Strasbourg",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Objets détournés"
+   ],
+   "references": [
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "psyronix_",
+    "fichier": "photos/p-202610262254-pfal.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DeuZHXMjnhL/?img_index=19"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "67"
+  },
+  {
+   "id": "p-202610262255-q582",
+   "texte": "tant d'injustices, tant de vies, et je n'ai qu'un carton",
+   "ville": "Strasbourg",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Inégalités et justice sociale"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "psyronix_",
+    "fichier": "photos/p-202610262255-q582.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DeuZHXMjnhL/?img_index=14"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "67"
+  },
+  {
+   "id": "p-202610262257-juqd",
+   "texte": "Même les pigeons nous chient moins dessus",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Humour"
+   ],
+   "sujet": [],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [],
+   "auteur": "fredheusse",
+   "photo": {
+    "credit": "fredheusse",
+    "fichier": "photos/p-202610262257-juqd.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De5FAQiDPxz/?img_index=6"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262258-8rif",
+   "texte": "J'aime mon pays comment peux tu en douter",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Littérature, arts"
+   ],
+   "auteur": "vivremoinscon",
+   "photo": {
+    "credit": "https://www.instagram.com/p/De4tZhYiHve/?img_index=20",
+    "fichier": "photos/p-202610262258-8rif.jpg"
+   },
+   "source": {},
+   "note": "Référence à la chanson de Sexy Sushi",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262300-6jkd",
+   "texte": "Soutien aux familles des vitrines",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Humour"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [],
+   "references": [
+    "Phrase de personnalité politique"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "vivremoinscon",
+    "fichier": "photos/p-202610262300-6jkd.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4tZhYiHve/?img_index=12"
+   },
+   "note": "Référence à des phrases politiciennes qui après chaque attaque, décès, etc, se mettent à dire de manière automatique « Soutien aux familles des victimes\"",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262301-dsii",
+   "texte": "Ils filment les casseurs, jamais les raisons",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "vivremoinscon",
+    "fichier": "photos/p-202610262301-dsii.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De4tZhYiHve/?img_index=10"
+   },
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610262323-j7zy",
+   "texte": "Pisser sous la douche c’est OK\r\nChier sur la capitalisme c’est mieux",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Jeu de mots",
+    "Humour"
+   ],
+   "sujet": [
+    "Économie",
+    "Inégalités et justice sociale"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Rosae",
+    "fichier": "photos/p-202610262323-j7zy.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-10-26",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610270820-njsk",
+   "texte": "Antifascix contre l'empire macronus",
+   "ville": "",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Jeu de mots",
+    "Humour",
+    "Détournement"
+   ],
+   "sujet": [
+    "Antifascisme",
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Pop culture",
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Sierra_whisky",
+    "fichier": "photos/p-202610270820-njsk.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/sierra__whisky/"
+   },
+   "note": "",
+   "ajoute": "2026-10-27"
+  },
+  {
+   "id": "p-202610270824-aigq",
+   "texte": "On n'est pas le pays des Lumières avec un taser électrique",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Histoire"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "les_marianes_anonymes",
+    "fichier": "photos/p-202610270824-aigq.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De6ROh2kSTN/?img_index=12"
+   },
+   "note": "",
+   "ajoute": "2026-10-27",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610270826-ng2q",
+   "texte": "Allo la démocratie",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "les_mariannes_anonymes",
+    "fichier": "photos/p-202610270826-ng2q.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De6ROh2kSTN/?img_index=8"
+   },
+   "note": "Référence à la fameuse phrase de Nabila, star de la téléréalité",
+   "ajoute": "2026-10-27",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610270829-lp6y",
+   "texte": "Plus de budget pour les lacrymos que pour nos stylos",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Éducation",
+    "Économie"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Sierra_whisky",
+    "fichier": "photos/p-202610270829-lp6y.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DenE3wEjBEG/?img_index=17"
+   },
+   "note": "",
+   "ajoute": "2026-10-27",
+   "departement": "75"
+  },
+  {
+   "id": "p-202610270830-yife",
+   "texte": "Bienvenue en lacrymocratie",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Sierra_whisky",
+    "fichier": "photos/p-202610270830-yife.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-10-27",
+   "departement": "75"
+  }
+ ],
  "tactiques": [
+  {
+   "id": "t-202610270832-vz72",
+   "nom": "Invitation à une fausse fête de la musique 2",
+   "famille": "canular",
+   "description": "Faire circuler en anglais l’annonce d’une fausse deuxième Fête de la musique le jour d’une manif, pour attirer des visiteurs britanniques et donner une visibilité internationale à la mobilisation. L’affiche, générée par IA, détourne la réputation festive de la Fête de la musique sur TikTok.",
+   "exemples": [
+    {
+     "texte": "Réseaux sociaux, pour la journée du 17 octobre 2026",
+     "source": "Lien",
+     "url": "https://www.letribunaldunet.fr/actualites/les-anglais-invites-a-manifester-en-france-le-17-octobre.html"
+    }
+   ],
+   "credit": "",
+   "ajoute": "2026-10-27"
+  },
   {
    "id": "t01",
    "nom": "Bataille d’aura",
@@ -322,6 +1318,25 @@ window.ATLAS = {
   }
  ],
  "chants": [
+  {
+   "id": "c-202610262204-7t5z",
+   "titre": "Le pieu",
+   "type": "Chanson originale",
+   "air": "",
+   "paroles": "Du temps où je n’étais qu’un gosse\r\nMon grand-père me disait souvent,\r\nAssis à l’ombre de son porche\r\nEn regardant passer le vent :\r\nPetit, vois-tu ce pieu de bois\r\nAuquel nous sommes tous enchaînés\r\nTant qu’il sera planté comme ça\r\nNous n’aurons pas la liberté.\r\n\r\nMais si nous tirons tous, il tombera\r\nÇa ne peut pas durer comme ça\r\nIl faut qu’il tombe, tombe, tombe\r\nVois-tu, comme il penche déjà\r\nSi je tire fort, il doit bouger\r\nEt si tu tires à mes côtés\r\nC’est sûr qu’il tombe, tombe, tombe\r\nEt nous aurons la liberté.\r\n\r\nPetit, ça fait déjà longtemps\r\nQue je m’y écorche les mains\r\nEt je me dis de temps en temps\r\nQue je me suis battu pour rien\r\nIl est toujours si grand, si lourd,\r\nLa force vient à me manquer\r\nJe me demande si un jour\r\nNous aurons bien la liberté.\r\n\r\nMais si nous tirons tous, il tombera\r\nÇa ne peut pas durer comme ça\r\nIl faut qu’il tombe, tombe, tombe\r\nVois-tu, comme il penche déjà\r\nSi je tire fort, il doit bouger\r\nEt si tu tires à mes côtés\r\nC’est sûr qu’il tombe, tombe, tombe\r\nEt nous aurons la liberté.\r\n\r\nPuis mon grand-père s’en est allé\r\nUn vent mauvais l’a emporté\r\nEt je reste seul sous le porche\r\nA regarder jouer d’autres gosses\r\nDansant autour du vieux pieu noir\r\nOù tant de mains se sont usées\r\nJe chante des chansons d’espoir\r\nQui parlent de la liberté.\r\n\r\nET si nous tirons tous, il tombera\r\nÇa ne peut pas durer comme ça\r\nIl faut qu’il tombe, tombe, tombe\r\nVois-tu, comme il penche déjà\r\nSi je tire fort, il doit bouger\r\nEt si tu tires à mes côtés\r\nC’est sûr qu’il tombe, tombe, tombe\r\nEt nous aurons la liberté.",
+   "manif": "",
+   "mouvement": "",
+   "sujet": [
+    "Démocratie",
+    "Antifascisme",
+    "Justice"
+   ],
+   "lien": "https://www.youtube.com/watch?v=4lPb8tINPAI&list=RD4lPb8tINPAI&start_radio=1",
+   "source": {},
+   "credit": "L’Estaca",
+   "note": "Originairement créé par Lluís Llach en 1968 contre l’oppression franquiste en Catalogne,  puis traduite dans le monde entier.",
+   "ajoute": "2026-10-26"
+  },
   {
    "id": "c01",
    "titre": "Lecornu, t’es foutu",
