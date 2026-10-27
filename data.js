@@ -1090,6 +1090,36 @@ window.ATLAS = {
    "note": "Référence à la fameuse phrase de Nabila, star de la téléréalité",
    "ajoute": "2026-10-27",
    "departement": "75"
+  },
+  {
+   "id": "p-202610270829-lp6y",
+   "texte": "Plus de budget pour les lacrymos que pour nos stylos",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Éducation",
+    "Économie"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Sierra_whisky",
+    "fichier": "photos/p-202610270829-lp6y.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DenE3wEjBEG/?img_index=17"
+   },
+   "note": "",
+   "ajoute": "2026-10-27",
+   "departement": "75"
   }
  ],
  "tactiques": [
