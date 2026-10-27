@@ -1062,6 +1062,34 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-27",
    "departement": "75"
+  },
+  {
+   "id": "p-202610270826-ng2q",
+   "texte": "Allo la démocratie",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "les_mariannes_anonymes",
+    "fichier": "photos/p-202610270826-ng2q.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/De6ROh2kSTN/?img_index=8"
+   },
+   "note": "Référence à la fameuse phrase de Nabila, star de la téléréalité",
+   "ajoute": "2026-10-27",
+   "departement": "75"
   }
  ],
  "tactiques": [
