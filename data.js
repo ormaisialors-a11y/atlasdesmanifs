@@ -1190,6 +1190,25 @@ window.ATLAS = {
    },
    "note": "Pancarte de la FFFF, Féedération Française des Fées Féevolutionnaires du Futur",
    "ajoute": "2026-10-27"
+  },
+  {
+   "id": "p-202610271733-1m2i",
+   "texte": "Portrait d'une jeunesse en feu",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Lolobisco",
+    "fichier": "photos/p-202610271733-1m2i.jpg"
+   },
+   "source": {},
+   "note": "Mots repris du film \" portrait d'une jeune fille en feu\"",
+   "ajoute": "2026-10-27",
+   "departement": "75"
   }
  ],
  "tactiques": [
