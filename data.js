@@ -999,6 +999,39 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-26",
    "departement": "75"
+  },
+  {
+   "id": "p-202610270820-njsk",
+   "texte": "Antifascix contre l'empire macronus",
+   "ville": "",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Jeu de mots",
+    "Humour",
+    "Détournement"
+   ],
+   "sujet": [
+    "Antifascisme",
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Pop culture",
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Sierra_whisky",
+    "fichier": "photos/p-202610270820-njsk.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/sierra__whisky/"
+   },
+   "note": "",
+   "ajoute": "2026-10-27"
   }
  ],
  "tactiques": [
