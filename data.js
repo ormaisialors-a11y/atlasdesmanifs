@@ -1149,6 +1149,21 @@ window.ATLAS = {
  ],
  "tactiques": [
   {
+   "id": "t-202610270832-vz72",
+   "nom": "Invitation à une fausse fête de la musique 2",
+   "famille": "canular",
+   "description": "Faire circuler en anglais l’annonce d’une fausse deuxième Fête de la musique le jour d’une manif, pour attirer des visiteurs britanniques et donner une visibilité internationale à la mobilisation. L’affiche, générée par IA, détourne la réputation festive de la Fête de la musique sur TikTok.",
+   "exemples": [
+    {
+     "texte": "Réseaux sociaux, pour la journée du 17 octobre 2026",
+     "source": "Lien",
+     "url": "https://www.letribunaldunet.fr/actualites/les-anglais-invites-a-manifester-en-france-le-17-octobre.html"
+    }
+   ],
+   "credit": "",
+   "ajoute": "2026-10-27"
+  },
+  {
    "id": "t01",
    "nom": "Bataille d’aura",
    "famille": "danse",
