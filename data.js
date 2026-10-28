@@ -1486,6 +1486,33 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-28",
    "departement": "33"
+  },
+  {
+   "id": "p-202610281205-xh1w",
+   "texte": "Marre d'etre le bouffon du roi",
+   "ville": "Clermont-Ferrand",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Humour"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "https://www.instagram.com/nereboumboum?exln=dHBzZngycGNscmYzhttps://www.instagram.com/nereboumboum?exln=dHBzZngycGNscmYz",
+    "fichier": "photos/p-202610281205-xh1w.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/nereboumboum?exln=dHBzZngycGNscmYz"
+   },
+   "note": "",
+   "ajoute": "2026-10-28",
+   "departement": "63"
   }
  ],
  "tactiques": [
