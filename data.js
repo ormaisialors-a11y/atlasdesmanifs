@@ -1409,6 +1409,34 @@ window.ATLAS = {
    "note": "Reprise du nom de la marque : PRESIDENT",
    "ajoute": "2026-10-28",
    "departement": "75"
+  },
+  {
+   "id": "p-202610281137-r7tb",
+   "texte": "Qui nous protège de la police ?",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère",
+    "Humour"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "https://www.instagram.com/jeremyvissio?mdxt=Y2d0aXRnOXg0dG85",
+    "fichier": "photos/p-202610281137-r7tb.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/jeremyvissio?mdxt=Y2d0aXRnOXg0dG85"
+   },
+   "note": "",
+   "ajoute": "2026-10-28",
+   "departement": "75"
   }
  ],
  "tactiques": [
