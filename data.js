@@ -1235,6 +1235,30 @@ window.ATLAS = {
    "note": "Jeu de mots sur les paquets de cigarettes",
    "ajoute": "2026-10-27",
    "departement": "75"
+  },
+  {
+   "id": "p-202610281101-ixfa",
+   "texte": "Gueu.x.ses antifa",
+   "ville": "Orleans",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "https://www.instagram.com/malexbonnefoy?psln=ZThldjZsOTh1NzJ3",
+    "fichier": "photos/p-202610281101-ixfa.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/inverti.e.s?obrf=MXBlOGtjbnAyNWFkYg=="
+   },
+   "note": "",
+   "ajoute": "2026-10-28"
   }
  ],
  "tactiques": [
