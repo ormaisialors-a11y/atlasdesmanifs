@@ -1284,6 +1284,31 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-28",
    "departement": "75"
+  },
+  {
+   "id": "p-202610281108-eh75",
+   "texte": "Fauchée, fachée, fashion, jamais facho",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Jeu de mots",
+    "Humour"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "https://www.instagram.com/malexbonnefoy?psln=ZThldjZsOTh1NzJ3",
+    "fichier": "photos/p-202610281108-eh75.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/sepideh_farsi_?vrfl=MWJveXdkbGdhYXp5cQ=="
+   },
+   "note": "",
+   "ajoute": "2026-10-28",
+   "departement": "75"
   }
  ],
  "tactiques": [
