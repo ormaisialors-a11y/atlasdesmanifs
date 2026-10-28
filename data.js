@@ -1333,6 +1333,31 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-28",
    "departement": "44"
+  },
+  {
+   "id": "p-202610281117-fsvu",
+   "texte": "Ils nous tirent dans la machoire car la verité sort de la bouche des enfants !",
+   "ville": "Nantes",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Humour"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "https://www.instagram.com/divergenceimages?exln=Z21henk2eDN6bGQ0",
+    "fichier": "photos/p-202610281117-fsvu.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/tomlouapre?cplk=Z3dyODJxMnRjenEx"
+   },
+   "note": "",
+   "ajoute": "2026-10-28",
+   "departement": "44"
   }
  ],
  "tactiques": [
