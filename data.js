@@ -1513,6 +1513,33 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-28",
    "departement": "63"
+  },
+  {
+   "id": "p-202610281207-06jf",
+   "texte": "Couvre-feu, pour mieux nous faire taire",
+   "ville": "Clermont-Ferrand",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Droits"
+   ],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "https://www.instagram.com/nereboumboum?exln=dHBzZngycGNscmYz",
+    "fichier": "photos/p-202610281207-06jf.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/nereboumboum?exln=dHBzZngycGNscmYz"
+   },
+   "note": "",
+   "ajoute": "2026-10-28",
+   "departement": "63"
   }
  ],
  "tactiques": [
