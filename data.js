@@ -1459,6 +1459,33 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-28",
    "departement": "75"
+  },
+  {
+   "id": "p-202610281143-fvh8",
+   "texte": "La police nous protège, ça crève les yeux",
+   "ville": "Bordeaux",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Cri de colère",
+    "Humour"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "https://www.instagram.com/leonardvisions?obrf=MTNtaXU3NHcxYnB2eQ==",
+    "fichier": "photos/p-202610281143-fvh8.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/leonardvisions?obrf=MTNtaXU3NHcxYnB2eQ=="
+   },
+   "note": "",
+   "ajoute": "2026-10-28",
+   "departement": "33"
   }
  ],
  "tactiques": [
