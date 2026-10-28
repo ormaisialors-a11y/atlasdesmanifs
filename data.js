@@ -1309,6 +1309,30 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-28",
    "departement": "75"
+  },
+  {
+   "id": "p-202610281115-thyx",
+   "texte": "L'Histoire a les yeux sur vous",
+   "ville": "Nantes",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "https://www.instagram.com/divergenceimages?exln=Z21henk2eDN6bGQ0",
+    "fichier": "photos/p-202610281115-thyx.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/tomlouapre?cplk=Z3dyODJxMnRjenEx"
+   },
+   "note": "",
+   "ajoute": "2026-10-28",
+   "departement": "44"
   }
  ],
  "tactiques": [
