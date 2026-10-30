@@ -1594,6 +1594,34 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-30",
    "departement": "38"
+  },
+  {
+   "id": "p-202610302322-in5k",
+   "texte": "Miss Billah\r\nC’est les ténèbres",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Jeu de mots",
+    "Humour",
+    "Mème, culture web"
+   ],
+   "sujet": [],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Pop culture",
+    "Web"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "@pipi_nul",
+    "fichier": "photos/p-202610302322-in5k.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-10-30",
+   "departement": "75"
   }
  ],
  "tactiques": [
