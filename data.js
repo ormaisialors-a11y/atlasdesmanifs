@@ -1568,6 +1568,32 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-10-30",
    "departement": "38"
+  },
+  {
+   "id": "p-202610302131-mon8",
+   "texte": "Des économies sur les privilèges pas sur la dignité des plus précaires",
+   "ville": "Grenoble",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Pouvoir d’achat",
+    "Inégalités et justice sociale"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "Morgane Rousseau",
+   "photo": {
+    "credit": "Morgane Rousseau",
+    "fichier": "photos/p-202610302131-mon8.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-10-30",
+   "departement": "38"
   }
  ],
  "tactiques": [
