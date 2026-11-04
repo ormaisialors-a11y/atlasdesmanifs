@@ -1749,6 +1749,26 @@ window.ATLAS = {
    "source": {},
    "note": "Référence au parti d'Emmanuel Macron \"la république en marche\" 2017-2022",
    "ajoute": "2026-11-04"
+  },
+  {
+   "id": "p-202611041350-hba7",
+   "texte": "Quand le doigt montre le peuple qui souffre l'imbécile regarde CNews",
+   "ville": "Strasbourg",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "@cricetus",
+    "fichier": "photos/p-202611041350-hba7.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-04"
   }
  ],
  "tactiques": [
