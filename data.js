@@ -1667,6 +1667,34 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-04"
+  },
+  {
+   "id": "p-202611041333-661x",
+   "texte": "Conspirateur Ami des Capitalistes des 40 voleurs",
+   "ville": "Lille",
+   "manif": "31-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Jeu de mots",
+    "Détournement"
+   ],
+   "sujet": [
+    "Anticapitalisme"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "CAC 40"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "mfq",
+    "fichier": "photos/p-202611041333-661x.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-04"
   }
  ],
  "tactiques": [
