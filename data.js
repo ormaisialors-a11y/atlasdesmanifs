@@ -1850,6 +1850,35 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-04",
    "departement": "75"
+  },
+  {
+   "id": "p-202611041811-ce0m",
+   "texte": "Imposer sa loi sans consentement c'est un viol démocratique",
+   "ville": "MARSEILLE",
+   "manif": "28-mars-2023",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Droits",
+    "Féminisme"
+   ],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [
+    "Sybole républicain"
+   ],
+   "auteur": "Karine",
+   "photo": {
+    "credit": "Manifestante",
+    "fichier": "photos/p-202611041811-ce0m.jpg"
+   },
+   "source": {},
+   "note": "En colère suite au passage en force par 49.3 malgré des mois de manifestations et un vote de refus de l'assemblée nationale.",
+   "ajoute": "2026-11-04"
   }
  ],
  "tactiques": [
