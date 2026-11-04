@@ -1797,6 +1797,27 @@ window.ATLAS = {
    "source": {},
    "note": "Détournement de la phrase de Descartes dans \"Le discours de la méthode\" 1637",
    "ajoute": "2026-11-04"
+  },
+  {
+   "id": "p-202611041357-f7pg",
+   "texte": "Voilà tu l'as ta république en marche",
+   "ville": "Strasbourg",
+   "manif": "6-octobre-2026",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "@Cricetus",
+    "fichier": "photos/p-202611041357-f7pg.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-04",
+   "departement": "67"
   }
  ],
  "tactiques": [
