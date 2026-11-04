@@ -1695,6 +1695,33 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-04"
+  },
+  {
+   "id": "p-202611041340-2nq0",
+   "texte": "There are alternatives (mais c'est pas toi)",
+   "ville": "Lille",
+   "manif": "31-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Économie"
+   ],
+   "forme": [
+    "Inscription",
+    "photo"
+   ],
+   "references": [
+    "Phrase de personnalité politique"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "mfq",
+    "fichier": "photos/p-202611041340-2nq0.jpg"
+   },
+   "source": {},
+   "note": "Margaret Thatcher, première ministre du Royaume-Uni de 1979 à 1990, a dit \"there is no alternative\"",
+   "ajoute": "2026-11-04"
   }
  ],
  "tactiques": [
