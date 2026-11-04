@@ -1818,6 +1818,38 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-04",
    "departement": "67"
+  },
+  {
+   "id": "p-202611041753-s2x2",
+   "texte": "Rébus 2027 : \r\nFeu Queue Lait Fa Chaud - Fuck les fachos\r\nVeau Thé Aile Lait Fille - Votez LFI",
+   "ville": "Paris",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Revendication",
+    "Jeu de mots",
+    "Humour",
+    "Poésie"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Antifascisme",
+    "Jeunesse"
+   ],
+   "forme": [
+    "Dessin",
+    "Drapeau",
+    "Affiche"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "PM",
+    "fichier": "photos/p-202611041753-s2x2.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-04",
+   "departement": "75"
   }
  ],
  "tactiques": [
