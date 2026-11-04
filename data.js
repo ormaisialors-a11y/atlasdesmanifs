@@ -1769,6 +1769,34 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-04"
+  },
+  {
+   "id": "p-202611041352-wxlz",
+   "texte": "Je pense donc je gêne",
+   "ville": "Lille",
+   "manif": "31-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Jeu de mots",
+    "Détournement"
+   ],
+   "sujet": [
+    "Jeunesse"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "mfq",
+    "fichier": "photos/p-202611041352-wxlz.jpg"
+   },
+   "source": {},
+   "note": "Détournement de la phrase de Descartes dans \"Le discours de la méthode\" 1637",
+   "ajoute": "2026-11-04"
   }
  ],
  "tactiques": [
