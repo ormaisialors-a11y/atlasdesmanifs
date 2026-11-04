@@ -1644,6 +1644,29 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-04"
+  },
+  {
+   "id": "p-202611041330-h5i7",
+   "texte": "Pancarte en carton, comme les décisions du gouvernement",
+   "ville": "Lille",
+   "manif": "31-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Humour"
+   ],
+   "sujet": [],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "mfq",
+    "fichier": "photos/p-202611041330-h5i7.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-04"
   }
  ],
  "tactiques": [
