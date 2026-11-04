@@ -2045,6 +2045,25 @@ window.ATLAS = {
    "ajoute": "2026-10-26"
   },
   {
+   "id": "c-202611041527-oy5y",
+   "titre": "J'ai deux passions",
+   "type": "Slogan scandé",
+   "air": "",
+   "paroles": "J'ai deux passions : la fanfare, la révolution\r\nVive les blocages les sabotages\r\nLes ZAD et les manifs sauvages !\r\n\r\nJ'ai deux passions : la fanfare, la révolution\r\nSe soutenir, construire le rêve\r\nQue la Terre entière se soulève !\r\n\r\nJ'ai deux passions : la culture et l'agriculture\r\nEt pour ça faut garder la terre\r\nLa thalasso faut pas la faire !\r\n\r\nJ'ai deux passions : le tuba et le saxo\r\nPour tous ces riches pas de thalasso\r\nEt pour nous autres les rigadeaux !",
+   "manif": "24-octobre-2026",
+   "mouvement": "",
+   "sujet": [
+    "Inégalités et justice sociale",
+    "Culture",
+    "Agriculture"
+   ],
+   "lien": "https://www.youtube.com/watch?v=KZon1HPN7Ec",
+   "source": {},
+   "credit": "",
+   "note": "Entendu pour la première fois via une fanfare de manif à Paris le 24 octobre, puis à nouveau le 31 octobre à Paris aussi",
+   "ajoute": "2026-11-04"
+  },
+  {
    "id": "c01",
    "titre": "Lecornu, t’es foutu",
    "type": "Slogan scandé",
