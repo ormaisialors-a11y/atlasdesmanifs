@@ -1722,6 +1722,33 @@ window.ATLAS = {
    "source": {},
    "note": "Margaret Thatcher, première ministre du Royaume-Uni de 1979 à 1990, a dit \"there is no alternative\"",
    "ajoute": "2026-11-04"
+  },
+  {
+   "id": "p-202611041349-z00k",
+   "texte": "République en marche, hôpital à l'arrêt",
+   "ville": "Lille",
+   "manif": "31-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère"
+   ],
+   "sujet": [
+    "hôpital"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "nom du parti macroniste"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "mfq",
+    "fichier": "photos/p-202611041349-z00k.jpg"
+   },
+   "source": {},
+   "note": "Référence au parti d'Emmanuel Macron \"la république en marche\" 2017-2022",
+   "ajoute": "2026-11-04"
   }
  ],
  "tactiques": [
