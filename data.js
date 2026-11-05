@@ -2027,6 +2027,30 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051236-j7qp",
+   "texte": "Quand tout sera privé, on sera privé de tout",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Anticapitalisme"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051236-j7qp.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
