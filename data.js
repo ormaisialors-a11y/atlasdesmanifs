@@ -2281,6 +2281,32 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051634-hpo2",
+   "texte": "Manu ciao !",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Musique"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051634-hpo2.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
