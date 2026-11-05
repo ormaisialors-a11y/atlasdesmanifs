@@ -2127,6 +2127,37 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051250-c00i",
+   "texte": "Multipolice\r\nEdition état autoritaire",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Humour",
+    "Détournement"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Antifascisme",
+    "Antiracisme",
+    "Anticapitalisme"
+   ],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [
+    "Monopoly"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051250-c00i.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
