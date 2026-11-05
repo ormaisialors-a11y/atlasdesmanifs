@@ -2258,6 +2258,29 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051632-36x9",
+   "texte": "Pour une hausse du goût de la vie",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Revendication",
+    "Humour"
+   ],
+   "sujet": [],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051632-36x9.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
