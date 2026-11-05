@@ -2101,6 +2101,32 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051247-5nto",
+   "texte": "Macrin t’es foutu\r\nLes CM1 sont dans la rue !",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Humour",
+    "Solidarité"
+   ],
+   "sujet": [
+    "Éducation",
+    "Jeunesse"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051247-5nto.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
