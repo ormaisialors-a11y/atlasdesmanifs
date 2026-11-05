@@ -1923,6 +1923,32 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-05",
    "departement": "29"
+  },
+  {
+   "id": "p-202611050800-5dtk",
+   "texte": "REMPLACER LES FACHOS PAR UNE BOULE DISCO",
+   "ville": "Strasbourg",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Humour"
+   ],
+   "sujet": [
+    "Antifascisme",
+    "Antiracisme",
+    "Anticapitalisme"
+   ],
+   "forme": [],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Frehatik",
+    "fichier": "photos/p-202611050800-5dtk.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
