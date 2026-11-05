@@ -1902,6 +1902,27 @@ window.ATLAS = {
    "note": "Chanson de sniper (brule)",
    "ajoute": "2026-11-05",
    "departement": "29"
+  },
+  {
+   "id": "p-202611050643-pfwx",
+   "texte": "Il y a 80 ans antifa se prononçait résistance",
+   "ville": "Brest",
+   "manif": "24-octobre-2026",
+   "registre": [],
+   "sujet": [
+    "Antifascisme"
+   ],
+   "forme": [],
+   "references": [],
+   "auteur": "Moi même",
+   "photo": {
+    "credit": "Moi même",
+    "fichier": "photos/p-202611050643-pfwx.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05",
+   "departement": "29"
   }
  ],
  "tactiques": [
