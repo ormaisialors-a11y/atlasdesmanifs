@@ -2334,6 +2334,35 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051643-ew42",
+   "texte": "\"Le gouvernement dévorant ses enfants\", 20264",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Anticapitalisme",
+    "Jeunesse",
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051643-ew42.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
