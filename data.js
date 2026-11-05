@@ -2183,6 +2183,33 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051315-ohzj",
+   "texte": "4° Reich ou 6° République",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Antifascisme"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Histoire"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051315-ohzj.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
