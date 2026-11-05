@@ -2234,6 +2234,30 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051630-8l9r",
+   "texte": "La Macronie est une blague dont j’attends la chute",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051630-8l9r.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
