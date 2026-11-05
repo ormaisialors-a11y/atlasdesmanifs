@@ -2210,6 +2210,30 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051627-pxx5",
+   "texte": "Je manifeste pour le droit de manifester !",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051627-pxx5.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
