@@ -1879,6 +1879,29 @@ window.ATLAS = {
    "source": {},
    "note": "En colère suite au passage en force par 49.3 malgré des mois de manifestations et un vote de refus de l'assemblée nationale.",
    "ajoute": "2026-11-04"
+  },
+  {
+   "id": "p-202611050641-01j3",
+   "texte": "Ils auront le feu car ils ont semé la haine",
+   "ville": "Brest",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [
+    "Musique"
+   ],
+   "auteur": "Moi même",
+   "photo": {
+    "credit": "Moi même",
+    "fichier": "photos/p-202611050641-01j3.jpg"
+   },
+   "source": {},
+   "note": "Chanson de sniper (brule)",
+   "ajoute": "2026-11-05",
+   "departement": "29"
   }
  ],
  "tactiques": [
