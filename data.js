@@ -2363,6 +2363,32 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051645-lo75",
+   "texte": "Tous des pénis-tériques",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Interpellation",
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Féminisme"
+   ],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051645-lo75.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
