@@ -2389,6 +2389,32 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051648-hfz5",
+   "texte": "Ecole Culture Retraite Les casseurs viennent d’en haut",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Inégalités et justice sociale"
+   ],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051648-hfz5.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
