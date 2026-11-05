@@ -1949,6 +1949,28 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611050802-yvnu",
+   "texte": "fermer la gueule du gouvernement",
+   "ville": "STRASBOURG",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "frehatik",
+    "fichier": "photos/p-202611050802-yvnu.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
