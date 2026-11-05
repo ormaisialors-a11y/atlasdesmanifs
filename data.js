@@ -2051,6 +2051,32 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051239-yzrq",
+   "texte": "+ de manuels\r\n- d’Emmanuel",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Revendication",
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Éducation"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051239-yzrq.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
