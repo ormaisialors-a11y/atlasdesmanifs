@@ -2158,6 +2158,31 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611051305-uapc",
+   "texte": "Gazez les violeurs,\r\nPas les mineurs",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Revendication",
+    "Humour"
+   ],
+   "sujet": [
+    "Justice"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611051305-uapc.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-05"
   }
  ],
  "tactiques": [
