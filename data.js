@@ -2466,6 +2466,31 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-06"
+  },
+  {
+   "id": "p-202611061530-2jen",
+   "texte": "temps",
+   "ville": "strasbourg",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Poésie"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Droits"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "f",
+    "fichier": "photos/p-202611061530-2jen.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-06"
   }
  ],
  "tactiques": [
