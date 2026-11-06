@@ -2442,6 +2442,30 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-06"
+  },
+  {
+   "id": "p-202611060613-vv6q",
+   "texte": "Goumin",
+   "ville": "Strasbourg",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Poésie"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Frehatik",
+    "fichier": "photos/p-202611060613-vv6q.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-06"
   }
  ],
  "tactiques": [
