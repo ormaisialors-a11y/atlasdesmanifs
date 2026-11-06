@@ -2493,6 +2493,30 @@ window.ATLAS = {
    "ajoute": "2026-11-06"
   },
   {
+   "id": "p-202611061531-e0ud",
+   "texte": "haribo lacrymo",
+   "ville": "strasbourg",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Revendication",
+    "Jeu de mots",
+    "Détournement"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "f",
+    "fichier": "photos/p-202611061531-e0ud.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-06"
+  },
+  {
    "id": "p-202611061531-g7lg",
    "texte": "x",
    "ville": "Strasbourg",
