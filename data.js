@@ -2786,6 +2786,29 @@ window.ATLAS = {
    "ajoute": "2026-11-04"
   },
   {
+   "id": "c-202611061540-qbg1",
+   "titre": "boss aldy",
+   "type": "Chanson détournée",
+   "air": "kogolese sous bbl",
+   "paroles": "ou-ou-ou-ou-ou-ou-ou La France est debout.... (trop sexy) \r\nou-ou-ou-ou-ou-ou-ou on nous pousse à bout.... (boss aldy) \r\nBaby-boo tu sais je suis à bout la fin du mois, je ne joins pas les deux bouts \r\nC'est à cause dl'essence qui est bien trop chère partout\r\nEt les factures j'en ai vraiment jusqu'au cou ! (boss aldy)\r\n\r\nBaby-boo tu sais je suis à bout \r\nl'gouvernement qui ne comprend rien du tout \r\net les médias nous font passer pour des fous \r\nMoi les fachos j'en ai vraiment jusqu'au cou ! (boss aldy) \r\n\r\nLa police, pourquoi est-ce qu'on vous paye ?? \r\nMoi j'suis propolis seulement celle des abeilles \r\nAu chômage surquali, gilets jaunes, Maya l'abeille \r\nManque plus qu'ce soit Marine, c'est l'même scénario qu'la veille (boss aldy)\r\n\r\nLa police, pourquoi est-ce qu'on vous paye ?? \r\nMoi j'suis propolis seulement celle des abeilles \r\nAu chômage surquali, gilets jaunes, Maya l'abeille \r\nManque plus qu'ce soit Marine, c'est l'même scénario qu'la veille (boss aldy) \r\n\r\nCnews et Pascal Praud \r\nles sugar daddy de tous les fachos\r\nc'est Bolloré qui nous mange le cerveau \r\nJ'les zappe puissance 8 telle une vraie racli. \r\n\r\nIls blessent en manif, j'aime encore moins la police\r\nsexy ghetto on va dire \"les jeunes sont malpolis\"\r\nSi on choisit la rue, c'est qu't'écoutes pas notre avis\r\ndonc mon chou le mouvement IL SERA JAMAIS RAMOLLI !! \r\n\r\nou-ou-ou-ou-ou-ou-ou La France est debout.... (trop sexy)\r\nou-ou-ou-ou-ou-ou-ou on nous pousse à bout.... (boss aldy)\r\n\r\nLa police, pourquoi est-ce qu'on vous paye ?? \r\nMoi j'suis propolis seulement celle des abeilles \r\nAu chômage surquali, gilets jaunes, Maya l'abeille \r\nManque plus qu'ce soit Marine, c'est l'même scénario qu'la veille (boss aldy)\r\n\r\nLa police, pourquoi est-ce qu'on vous paye ?? \r\nou-ou-ou-ou-ou-ou-ou (boss aldy) \r\nLa police, pourquoi est-ce qu'on vous paye ?? (la France est debout...) \r\n\r\nLa police, pourquoi est-ce qu'on vous paye ?? \r\nMoi j'suis propolis seulement celle des abeilles \r\nAu chômage surquali, gilets jaunes, Maya l'abeille \r\nManque plus qu'ce soit Marine, c'est l'même scénario qu'la veille",
+   "manif": "",
+   "mouvement": "",
+   "sujet": [
+    "Démocratie",
+    "Antifascisme",
+    "Antiracisme",
+    "Anticapitalisme",
+    "Violences policières",
+    "Écologie",
+    "Pouvoir d’achat"
+   ],
+   "lien": "https://www.youtube.com/watch?v=iBj4_BtEXn0&list=RDiBj4_BtEXn0&start_radio=1",
+   "source": {},
+   "credit": "",
+   "note": "dunkerque",
+   "ajoute": "2026-11-06"
+  },
+  {
    "id": "c01",
    "titre": "Lecornu, t’es foutu",
    "type": "Slogan scandé",
