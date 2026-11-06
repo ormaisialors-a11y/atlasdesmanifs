@@ -2415,6 +2415,33 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-05"
+  },
+  {
+   "id": "p-202611060602-m0i7",
+   "texte": "Que bueno que rico que lindo, police lacrymo",
+   "ville": "Annecy",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Pop culture",
+    "Musique"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "@baylabayla__",
+    "fichier": "photos/p-202611060602-m0i7.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-06"
   }
  ],
  "tactiques": [
