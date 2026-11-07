@@ -2540,6 +2540,32 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-06"
+  },
+  {
+   "id": "p-202611071327-p1hr",
+   "texte": "C mort éteignons bolloré",
+   "ville": "18000",
+   "manif": "7-novembre-2026",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [
+    "Média"
+   ],
+   "forme": [
+    "pancarte"
+   ],
+   "references": [
+    "c news"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Rins",
+    "fichier": "photos/p-202611071327-p1hr.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-07"
   }
  ],
  "tactiques": [
