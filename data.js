@@ -2566,6 +2566,30 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-07"
+  },
+  {
+   "id": "p-202611071334-0065",
+   "texte": "Loi duplomb\r\nSuppression des agences de l'environnement \r\nBiodiversité en chute libre\r\nRale cul de l'extrème droite",
+   "ville": "18000",
+   "manif": "7-novembre-2026",
+   "registre": [
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Écologie"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Rins",
+    "fichier": "photos/p-202611071334-0065.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-07"
   }
  ],
  "tactiques": [
