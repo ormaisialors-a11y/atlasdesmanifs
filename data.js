@@ -2641,6 +2641,33 @@ window.ATLAS = {
    "source": {},
    "note": "Emprunt à la culture du foot extrêmement populaire pour porter un message de justice fiscale. Et la suppression de l'ISF a été une des premières mesures de Macron, c'est fondateur et on nous dit qu'il n'y a plus d'argent...",
    "ajoute": "2026-11-07"
+  },
+  {
+   "id": "p-202611071906-top0",
+   "texte": "2026, si tu changes 4 chiffres ça fait 1789, coïncidence ?",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Interpellation",
+    "Humour"
+   ],
+   "sujet": [
+    "Démocratie"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Histoire"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Catherine Jean",
+    "fichier": "photos/p-202611071906-top0.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-07"
   }
  ],
  "tactiques": [
