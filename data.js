@@ -2614,6 +2614,33 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-07"
+  },
+  {
+   "id": "p-202611071705-2b73",
+   "texte": "Ramène l'ISF à la maison",
+   "ville": "angers",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Économie",
+    "Inégalités et justice sociale"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "Yannick",
+   "photo": {
+    "credit": "Yannick",
+    "fichier": "photos/p-202611071705-2b73.jpg"
+   },
+   "source": {},
+   "note": "Emprunt à la culture du foot extrêmement populaire pour porter un message de justice fiscale. Et la suppression de l'ISF a été une des premières mesures de Macron, c'est fondateur et on nous dit qu'il n'y a plus d'argent...",
+   "ajoute": "2026-11-07"
   }
  ],
  "tactiques": [
