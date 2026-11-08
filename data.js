@@ -2756,6 +2756,36 @@ window.ATLAS = {
    "note": "Vincent Bolloré et Lecornu",
    "ajoute": "2026-11-08",
    "departement": "75"
+  },
+  {
+   "id": "p-202611081016-m1a0",
+   "texte": "Martine explique la démocratie aux fachos",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Antifascisme"
+   ],
+   "forme": [],
+   "references": [
+    "Pop culture",
+    "Littérature, arts"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Remy Buisine",
+    "fichier": "photos/p-202611081016-m1a0.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DfXgGCyjEMR/?img_index=6"
+   },
+   "note": "Références aux célèbres livres « Martine à ».",
+   "ajoute": "2026-11-08",
+   "departement": "75"
   }
  ],
  "tactiques": [
