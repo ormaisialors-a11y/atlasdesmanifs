@@ -2798,6 +2798,25 @@ window.ATLAS = {
    }
   },
   {
+   "id": "t-202611081013-p3db",
+   "nom": "Marionnettes",
+   "famille": "costumes",
+   "description": "Une marionette de Marianne en larme",
+   "exemples": [
+    {
+     "texte": "Paris",
+     "source": "Lien",
+     "url": "https://www.instagram.com/p/DfXkF-Xjn8g/?img_index=6"
+    }
+   ],
+   "credit": "",
+   "ajoute": "2026-11-08",
+   "photo": {
+    "fichier": "photos/t-202611081013-p3db.jpg",
+    "credit": ""
+   }
+  },
+  {
    "id": "t01",
    "nom": "Bataille d’aura",
    "famille": "danse",
