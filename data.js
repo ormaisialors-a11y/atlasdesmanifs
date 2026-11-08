@@ -2929,6 +2929,30 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-08",
    "departement": "75"
+  },
+  {
+   "id": "p-202611081039-eh7e",
+   "texte": "Lecornu t’es foutu, Halloween est dans la rue",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Humour"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Mathilde Larrere",
+    "fichier": "photos/p-202611081039-eh7e.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DfKloWPjQqK/?img_index=7"
+   },
+   "note": "",
+   "ajoute": "2026-11-08",
+   "departement": "75"
   }
  ],
  "tactiques": [
