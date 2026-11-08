@@ -2953,6 +2953,34 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-08",
    "departement": "75"
+  },
+  {
+   "id": "p-202611081042-fz5c",
+   "texte": "Cherie, j’ai mutilé les gosses",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [
+    "Violences policières"
+   ],
+   "forme": [],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "anneboistard",
+    "fichier": "photos/p-202611081042-fz5c.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DfKwtVSiLzr/?img_index=14"
+   },
+   "note": "",
+   "ajoute": "2026-11-08",
+   "departement": "75"
   }
  ],
  "tactiques": [
