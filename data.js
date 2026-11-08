@@ -2779,6 +2779,25 @@ window.ATLAS = {
    "ajoute": "2026-11-04"
   },
   {
+   "id": "t-202611081011-aqnw",
+   "nom": "Marionnettes en feu",
+   "famille": "costumes",
+   "description": "Une marionette en feu de CRS(S)",
+   "exemples": [
+    {
+     "texte": "Strasbourg",
+     "source": "Lien",
+     "url": "https://www.instagram.com/p/DfXZluKt3hu/"
+    }
+   ],
+   "credit": "",
+   "ajoute": "2026-11-08",
+   "photo": {
+    "fichier": "photos/t-202611081011-aqnw.jpg",
+    "credit": ""
+   }
+  },
+  {
    "id": "t01",
    "nom": "Bataille d’aura",
    "famille": "danse",
