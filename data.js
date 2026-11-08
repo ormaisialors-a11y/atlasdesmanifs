@@ -2786,6 +2786,33 @@ window.ATLAS = {
    "note": "Références aux célèbres livres « Martine à ».",
    "ajoute": "2026-11-08",
    "departement": "75"
+  },
+  {
+   "id": "p-202611081017-4nxp",
+   "texte": "On regarde les flammes mais qui a allumé le feu",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère"
+   ],
+   "sujet": [],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Remy Buisine",
+    "fichier": "photos/p-202611081017-4nxp.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DfXgGCyjEMR/?img_index=8"
+   },
+   "note": "",
+   "ajoute": "2026-11-08",
+   "departement": "75"
   }
  ],
  "tactiques": [
