@@ -3020,6 +3020,25 @@ window.ATLAS = {
    }
   },
   {
+   "id": "t-202611081031-yyxy",
+   "nom": "Détournement de reportage média",
+   "famille": "detournement",
+   "description": "Détournement d’un reportage CNEWS sur les poubelles brulées",
+   "exemples": [
+    {
+     "texte": "Marseille",
+     "source": "Lien",
+     "url": "https://www.instagram.com/p/DfISWdvCouw/"
+    }
+   ],
+   "credit": "Genztvmarseille",
+   "ajoute": "2026-11-08",
+   "photo": {
+    "fichier": "photos/t-202611081031-yyxy.jpg",
+    "credit": "Genztvmarseille"
+   }
+  },
+  {
    "id": "t01",
    "nom": "Bataille d’aura",
    "famille": "danse",
