@@ -2813,6 +2813,32 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-08",
    "departement": "75"
+  },
+  {
+   "id": "p-202611081019-t9f6",
+   "texte": "BRETS - Saveur lacrymo sur mineur\r\nBRETS - Saveur poubelles brulées",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Détournement"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Hugo Décrypte",
+    "fichier": "photos/p-202611081019-t9f6.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DfXut0YjSyi/?img_index=3"
+   },
+   "note": "Références aux chips BRETS",
+   "ajoute": "2026-11-08",
+   "departement": "75"
   }
  ],
  "tactiques": [
