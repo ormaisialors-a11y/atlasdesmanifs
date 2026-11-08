@@ -2872,6 +2872,34 @@ window.ATLAS = {
    "note": "Références à la vidéo de David Castello-Lopes : https://www.youtube.com/watch?v=aIVsz5Pj0eE&list=RDaIVsz5Pj0eE&start_radio=1",
    "ajoute": "2026-11-08",
    "departement": "75"
+  },
+  {
+   "id": "p-202611081023-oiwb",
+   "texte": "Mieux vaut un plateau de fromage que le plateau de CNEWS",
+   "ville": "Paris",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Média"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Hugo Décrypte",
+    "fichier": "photos/p-202611081023-oiwb.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DfXut0YjSyi/?img_index=6"
+   },
+   "note": "",
+   "ajoute": "2026-11-08",
+   "departement": "75"
   }
  ],
  "tactiques": [
