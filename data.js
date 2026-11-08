@@ -2900,6 +2900,35 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-08",
    "departement": "75"
+  },
+  {
+   "id": "p-202611081025-vqee",
+   "texte": "Plus de raclette, moins de raclure",
+   "ville": "Paris",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Humour"
+   ],
+   "sujet": [
+    "Démocratie",
+    "Inégalités et justice sociale"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "FloFauquet",
+    "fichier": "photos/p-202611081025-vqee.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DfNIVf9DArJ/?img_index=6"
+   },
+   "note": "",
+   "ajoute": "2026-11-08",
+   "departement": "75"
   }
  ],
  "tactiques": [
