@@ -2695,6 +2695,37 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-07"
+  },
+  {
+   "id": "p-202611081007-imme",
+   "texte": "Un autre bruit de bottes est possible",
+   "ville": "Limoges",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Antifascisme",
+    "Agriculture"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Histoire"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "@Christophenoisette / @hanslucas",
+    "fichier": "photos/p-202611081007-imme.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.instagram.com/p/DfcfIVvDYtr/?img_index=1"
+   },
+   "note": "",
+   "ajoute": "2026-11-08",
+   "departement": "87"
   }
  ],
  "tactiques": [
