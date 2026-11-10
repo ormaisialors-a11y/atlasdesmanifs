@@ -2981,6 +2981,27 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-08",
    "departement": "75"
+  },
+  {
+   "id": "p-202611101259-0zd2",
+   "texte": "En socio on cite ses sources. A CNews on cite Bolloré ? (signez la pétition !!)",
+   "ville": "Strasbourg",
+   "manif": "5-novembre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [],
+   "forme": [],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "@Cricetus",
+    "fichier": "photos/p-202611101259-0zd2.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-10",
+   "departement": "67"
   }
  ],
  "tactiques": [
