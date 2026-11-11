@@ -3095,6 +3095,44 @@ window.ATLAS = {
    },
    "note": "",
    "ajoute": "2026-11-11"
+  },
+  {
+   "id": "p-202611111030-upbj",
+   "texte": "Préparez vos guiboles, c'est la fin du pétrole.\r\nla rue est à nous_ street art rebellion",
+   "ville": "Brest",
+   "manif": "17-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Jeu de mots",
+    "Humour",
+    "Poésie"
+   ],
+   "sujet": [
+    "Anticapitalisme",
+    "Jeunesse",
+    "Économie",
+    "Écologie",
+    "Culture"
+   ],
+   "forme": [
+    "Dessin",
+    "Affiche"
+   ],
+   "references": [
+    "Pop culture",
+    "Littérature, arts"
+   ],
+   "auteur": "street art rebellion/Mister PEE",
+   "photo": {
+    "credit": "street art rebellion",
+    "fichier": "photos/p-202611111030-upbj.jpg"
+   },
+   "source": {
+    "titre": "Publication d’origine",
+    "url": "https://www.facebook.com/photo?fbid=1568029995352518&set=pcb.1568035965351921"
+   },
+   "note": "",
+   "ajoute": "2026-11-11"
   }
  ],
  "tactiques": [
