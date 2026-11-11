@@ -3193,6 +3193,33 @@ window.ATLAS = {
    "note": "Les poussins de Claude Ponti font référence à un souvenir d'enfance des personnes qui ont en moyenne au-delà de 50 ans, à l'image des minions que peuvent avoir la génération z. Les poussins meurtris attirent le regard mais le message est surtout destiné aux forces de l'ordre.",
    "ajoute": "2026-11-11",
    "departement": "13"
+  },
+  {
+   "id": "p-202611111949-t4ku",
+   "texte": "Une jeunesse sage",
+   "ville": "Angers",
+   "manif": "blocus-rentree-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Jeunesse",
+    "Violences policières"
+   ],
+   "forme": [
+    "Dessin"
+   ],
+   "references": [
+    "Slogan historique"
+   ],
+   "auteur": "@slo1504",
+   "photo": {
+    "credit": "@luc_axtr_",
+    "fichier": "photos/p-202611111949-t4ku.jpg"
+   },
+   "source": {},
+   "note": "Reprise des singes de la sagesse avec les violences faites au jeunes lors des manifestations/blocus",
+   "ajoute": "2026-11-11"
   }
  ],
  "tactiques": [
