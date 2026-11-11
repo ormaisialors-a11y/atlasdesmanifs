@@ -3162,6 +3162,37 @@ window.ATLAS = {
    "note": "Le poing américain fait référence au combat rapproché, pour parler de la violence d'arracher et de maintenir nos droits à l'aide de nos poings lorsque la situation ne nous laisse que cette possibilité.",
    "ajoute": "2026-11-11",
    "departement": "13"
+  },
+  {
+   "id": "p-202611111706-mbcl",
+   "texte": "Heureusement qu'on manifeste pour ta carte vitale et tes congés payés",
+   "ville": "Marseille",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère",
+    "Humour"
+   ],
+   "sujet": [
+    "Droits"
+   ],
+   "forme": [
+    "Dessin",
+    "Inscription",
+    "Drapeau"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "@andrea_raymond_t",
+   "photo": {
+    "credit": "Julien.",
+    "fichier": "photos/p-202611111706-mbcl.jpg"
+   },
+   "source": {},
+   "note": "Les poussins de Claude Ponti font référence à un souvenir d'enfance des personnes qui ont en moyenne au-delà de 50 ans, à l'image des minions que peuvent avoir la génération z. Les poussins meurtris attirent le regard mais le message est surtout destiné aux forces de l'ordre.",
+   "ajoute": "2026-11-11",
+   "departement": "13"
   }
  ],
  "tactiques": [
