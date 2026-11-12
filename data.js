@@ -3220,6 +3220,32 @@ window.ATLAS = {
    "source": {},
    "note": "Reprise des singes de la sagesse avec les violences faites au jeunes lors des manifestations/blocus",
    "ajoute": "2026-11-11"
+  },
+  {
+   "id": "p-202611120752-py8s",
+   "texte": "Ils préparent la guerre\r\nPréparons la révolution !",
+   "ville": "Perpignan",
+   "manif": "24-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère"
+   ],
+   "sujet": [
+    "Anticapitalisme",
+    "Anti guerre"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "Moi même",
+   "photo": {
+    "credit": "Brémond Pierre",
+    "fichier": "photos/p-202611120752-py8s.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-12"
   }
  ],
  "tactiques": [
