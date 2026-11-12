@@ -3624,6 +3624,27 @@ window.ATLAS = {
    "ajoute": "2026-11-09"
   },
   {
+   "id": "c-202611121532-5gua",
+   "titre": "À bas l'État,",
+   "type": "Slogan scandé",
+   "air": "",
+   "paroles": "À bas l'État, les flics et les fachos \r\n(et ainsi de suite)",
+   "manif": "",
+   "mouvement": "",
+   "sujet": [
+    "Justice",
+    "Droits",
+    "Violences policières",
+    "Inégalités et justice sociale",
+    "anarchisme"
+   ],
+   "lien": "",
+   "source": {},
+   "credit": "",
+   "note": "",
+   "ajoute": "2026-11-12"
+  },
+  {
    "id": "c01",
    "titre": "Lecornu, t’es foutu",
    "type": "Slogan scandé",
