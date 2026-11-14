@@ -3273,6 +3273,31 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-12"
+  },
+  {
+   "id": "p-202611141022-z8ip",
+   "texte": "Siamo cookies antifascisti\r\n\r\nCookies vegans : farine, huile, sucre, chocolat, lait de soja\r\n\r\nOn veut construire un monde joyeux et solidaire, et on ne savait pas quoi faire, alors on a fait des cookies !\r\nAgissons, partout, ensemble !",
+   "ville": "Bordeaux",
+   "manif": "31-octobre-2026",
+   "registre": [
+    "Solidarité"
+   ],
+   "sujet": [
+    "Antifascisme"
+   ],
+   "forme": [],
+   "references": [
+    "Slogan historique"
+   ],
+   "auteur": "L'Amicale des Cookies Antifascistes Bordelais",
+   "photo": {
+    "credit": "LVAO",
+    "fichier": "photos/p-202611141022-z8ip.jpg"
+   },
+   "source": {},
+   "note": "Distribution de cookies à prix libre (à partir de 0€) en soutien à des caisses de grève",
+   "ajoute": "2026-11-14",
+   "departement": "33"
   }
  ],
  "tactiques": [
