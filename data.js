@@ -3322,6 +3322,31 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-15"
+  },
+  {
+   "id": "p-202611191245-k1v2",
+   "texte": "France : 7e puissance mondiale, 27e niveau scolaire. Il va où l'argent",
+   "ville": "Aix-en-Provence",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Revendication"
+   ],
+   "sujet": [
+    "Éducation"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Marie-Laure Barbier",
+    "fichier": "photos/p-202611191245-k1v2.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-19",
+   "departement": "13"
   }
  ],
  "tactiques": [
