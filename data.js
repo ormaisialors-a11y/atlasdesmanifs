@@ -3511,6 +3511,33 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-19",
    "departement": "13"
+  },
+  {
+   "id": "p-202611191319-83l6",
+   "texte": "Macron, la voilà ta république en marche",
+   "ville": "Aix-en-Provence",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Cri de colère"
+   ],
+   "sujet": [],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [
+    "Phrase de personnalité politique"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Marie-Laure Barbier",
+    "fichier": "photos/p-202611191319-83l6.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-19",
+   "departement": "13"
   }
  ],
  "tactiques": [
