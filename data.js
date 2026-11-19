@@ -3485,6 +3485,32 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-19",
    "departement": "13"
+  },
+  {
+   "id": "p-202611191314-ndg4",
+   "texte": "Si tu n'entends toujours pas le bruit des bottes, c'est que c'est vraiment toi qui les portes.",
+   "ville": "Aix-en-Provence",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Interpellation"
+   ],
+   "sujet": [
+    "Antifascisme"
+   ],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Marie-Laure Barbier",
+    "fichier": "photos/p-202611191314-ndg4.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-19",
+   "departement": "13"
   }
  ],
  "tactiques": [
