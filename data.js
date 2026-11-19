@@ -3429,6 +3429,33 @@ window.ATLAS = {
    "source": {},
    "note": "",
    "ajoute": "2026-11-19"
+  },
+  {
+   "id": "p-202611191301-t7ae",
+   "texte": "Dans la fleur de rage",
+   "ville": "Aix-en-Provence",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Cri de colère",
+    "Jeu de mots"
+   ],
+   "sujet": [
+    "Jeunesse"
+   ],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [],
+   "auteur": "",
+   "photo": {
+    "credit": "Marie-Laure Barbier",
+    "fichier": "photos/p-202611191301-t7ae.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-19",
+   "departement": "13"
   }
  ],
  "tactiques": [
