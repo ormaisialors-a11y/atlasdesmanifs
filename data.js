@@ -3456,6 +3456,35 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-19",
    "departement": "13"
+  },
+  {
+   "id": "p-202611191311-ag6u",
+   "texte": "Macron, Geffray, vous êtes dans la Barbamerde",
+   "ville": "Aix-en-Provence",
+   "manif": "13-octobre-2026",
+   "registre": [
+    "Interpellation",
+    "Jeu de mots",
+    "Humour",
+    "Détournement"
+   ],
+   "sujet": [],
+   "forme": [
+    "Dessin",
+    "Inscription"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "",
+   "photo": {
+    "credit": "Marie-Laure Barbier",
+    "fichier": "photos/p-202611191311-ag6u.jpg"
+   },
+   "source": {},
+   "note": "",
+   "ajoute": "2026-11-19",
+   "departement": "13"
   }
  ],
  "tactiques": [
