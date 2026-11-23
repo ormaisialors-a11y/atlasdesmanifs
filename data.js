@@ -3538,6 +3538,34 @@ window.ATLAS = {
    "note": "",
    "ajoute": "2026-11-19",
    "departement": "13"
+  },
+  {
+   "id": "p-202611232124-d9po",
+   "texte": "Des solutions ou un sort",
+   "ville": "Marseille",
+   "manif": "31-octobre-2026",
+   "registre": [
+    "Humour",
+    "Détournement"
+   ],
+   "sujet": [
+    "Éducation",
+    "Jeunesse"
+   ],
+   "forme": [
+    "Inscription"
+   ],
+   "references": [
+    "Pop culture"
+   ],
+   "auteur": "Inconnue",
+   "photo": {
+    "credit": "Rima",
+    "fichier": "photos/p-202611232124-d9po.jpg"
+   },
+   "source": {},
+   "note": "La manifestation avait lieu le jour d'Halloween.",
+   "ajoute": "2026-11-23"
   }
  ],
  "tactiques": [
